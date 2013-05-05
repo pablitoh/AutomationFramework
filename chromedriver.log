@@ -1,0 +1,19 @@
+[0504/215041:INFO:chromedriver_server.cc(76)] Handling request: /status 
+[0504/215041:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"","status":0,"value":{"build":{"version":"alpha"},"os":{"arch":"x86_64","name":"Windows NT","version":"6.1 SP1"}}}
+[0504/215041:INFO:chromedriver_server.cc(76)] Handling request: /session {"desiredCapabilities":{"platform":"ANY","browserName":"chrome","chromeOptions":{"args":[],"extensions":[]},"version":"","chrome.switches":[]}}
+[0504/215041:INFO:chrome_launcher.cc(74)] Using chrome from C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[0504/215041:INFO:chromedriver_server.cc(81)] Done handling request: 303 
+[0504/215041:INFO:chromedriver_server.cc(76)] Handling request: /session/598bef5d799c93f073311ee6e2f97aa6 
+[0504/215041:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"598bef5d799c93f073311ee6e2f97aa6","status":0,"value":{"acceptSslCerts":true,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","cssSelectorsEnabled":true,"databaseEnabled":true,"driverVersion":"0.8","handlesAlerts":true,"javascriptEnabled":true,"locationContextEnabled":true,"nativeEvents":true,"platform":"Windows NT","rotatable":false,"takesScreenshot":true,"version":"26.0.1410.64","webStorageEnabled":true}}
+[0504/215041:INFO:chromedriver_server.cc(76)] Handling request: /session/598bef5d799c93f073311ee6e2f97aa6/url {"url":"https://apisandbox.zuora.com/login.html"}
+[0504/215048:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"598bef5d799c93f073311ee6e2f97aa6","status":0,"value":null}
+[0504/215048:INFO:chromedriver_server.cc(76)] Handling request: /session/598bef5d799c93f073311ee6e2f97aa6/frame {"id":"newlogin"}
+[0504/215052:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"598bef5d799c93f073311ee6e2f97aa6","status":0,"value":null}
+[0504/215052:INFO:chromedriver_server.cc(76)] Handling request: /session/598bef5d799c93f073311ee6e2f97aa6/element {"using":"id","value":"id_username"}
+[0504/215052:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"598bef5d799c93f073311ee6e2f97aa6","status":0,"value":{"ELEMENT":"0.7178739339578897:1"}}
+[0504/215052:INFO:chromedriver_server.cc(76)] Handling request: /session/598bef5d799c93f073311ee6e2f97aa6/element/0.7178739339578897:1/value {"id":"0.7178739339578897:1","value":["Pablo"]}
+[0504/215052:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"598bef5d799c93f073311ee6e2f97aa6","status":0,"value":null}
+[0504/215052:INFO:chromedriver_server.cc(76)] Handling request: /session/598bef5d799c93f073311ee6e2f97aa6 
+[0504/215052:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"598bef5d799c93f073311ee6e2f97aa6","status":0,"value":null}
+[0504/215052:INFO:chromedriver_server.cc(76)] Handling request: /shutdown 
+[0504/215052:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"","status":0,"value":null}
