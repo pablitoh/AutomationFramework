@@ -2,9 +2,12 @@ package com.openEnglish.utils;
 
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.springframework.stereotype.Component;
 
+/*
+ * Pablo Conde - 6/5/2013 Added: 
+ * WebDriver instance to be injected via Spring
+ */
 @Component
 public class SharedDriver {
 	

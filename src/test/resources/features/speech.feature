@@ -1,13 +1,13 @@
-Feature: Speaking
+Feature: Test de Seba
 
-Scenario: TestFramework
-Given I want to use the browser Chrome
+@Firefox
+Scenario: Probar Gilada
+Given The browser is Firefox
 Given Im on Zuora Page
-Then Fill the username and Password
-Then Close the browser
+Then Fill the username and Password with "sarasa" and "conde"
 
-Scenario: TestFramework2
-Given I want to use the browser InternetExplorer
+@IE
+Scenario: Probar Gilada
+Given The browser is InternetExplorer
 Given Im on Zuora Page
-Then Fill the username and Password
-Then Close the browser
+Then Fill the username and Password with "sarasa" and "conde"
