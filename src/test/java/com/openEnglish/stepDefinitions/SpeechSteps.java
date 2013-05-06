@@ -26,7 +26,7 @@ public class SpeechSteps {
 	public void fill_zuora_auth(String username, String password)
 	{
 		ZuoraPage zuorapage = new ZuoraPage(webdriver.driver);
-		zuorapage.typenames(username, password);
+		zuorapage.loginWithCredentials(username, password);
 	}
 	
 }

@@ -24,10 +24,12 @@ public class ZuoraPage {
 	private WebElement usernameField;
 	@FindBy(id="id_password")
 	private WebElement passwordField;
+	@FindBy(id="newlogin")
+	private WebElement loginIframe;
 	
-	public ZuoraPage typenames(String username, String password)
+	public ZuoraPage loginWithCredentials(String username, String password)
 	{
-		driver.switchTo().frame("newlogin");
+		driver.switchTo().frame(loginIframe);
 	    
 		usernameField.sendKeys(username);
 		passwordField.sendKeys(password);
