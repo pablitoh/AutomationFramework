@@ -13,10 +13,8 @@ public class SharedDriver {
 	
 	public WebDriver driver;
 
-	
 	public SharedDriver()
 	{
 		this.driver = null;
 	}
-
 }
