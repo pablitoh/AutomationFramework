@@ -5,8 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
+import com.openEnglish.utils.Countries;
 import com.openEnglish.utils.CountryStrategyFactory;
-import com.openEnglish.utils.ProductStrategy;
 
 public class LeadCreationWebFormPage {
 
@@ -32,7 +32,7 @@ public class LeadCreationWebFormPage {
 
 	
 	
-	public ProductAdvisorQuestionnairePage CreateWith(String firstName, String lastName, String email, ProductStrategy country,
+	public ProductAdvisorQuestionnairePage CreateWith(String firstName, String lastName, String email, Countries country,
 			String state, String city, String telType, String telCode, String tel1, String tel2,
 			String media, String age) throws Exception {
 		
@@ -42,10 +42,9 @@ public class LeadCreationWebFormPage {
 		
 		//WAIT
 		Thread.sleep(5000);
-		
 		CountryStrategyFactory countryStrategy = new CountryStrategyFactory();
 		
-		countryStrategy.getStrategyFor(country);
+		countryStrategy.getStrategyFor(firstName, lastName, email, country, state, city, telType, telCode, tel1, tel2, media, age);
 		
 			
 		//Depending on the test cases, this needs to be reviewed in order to change it to Strategy Pattern

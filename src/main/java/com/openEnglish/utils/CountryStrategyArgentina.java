@@ -20,12 +20,12 @@ public class CountryStrategyArgentina implements CountryStrategy {
 		@FindBy(id="country")
 		private WebElement countrySelect;
 		
-		public boolean execute(String firstName, String lastName, String email, String country,
+		public boolean execute(String firstName, String lastName, String email,
 				String state, String city, String telType, String telCode, String tel1, String tel2,
 				String media, String age) {
 			
 			Select selectCountry = new Select(countrySelect);
-			selectCountry.selectByVisibleText(country);
+			selectCountry.selectByVisibleText("Argentina");
 			
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			
@@ -53,8 +53,8 @@ public class CountryStrategyArgentina implements CountryStrategy {
 			
 			driver.findElement(By.id("phoneNumber11")).sendKeys(tel1);
 			driver.findElement(By.id("phoneNumber12")).sendKeys(tel2);
-			
-			return true;
+		
+		return true;
 		}
 }
 

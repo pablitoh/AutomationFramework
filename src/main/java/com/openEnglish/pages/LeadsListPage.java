@@ -19,5 +19,13 @@ public class LeadsListPage {
 		
 		return new ConvertLeadToAccountPage(driver);
 	}
+	
+	public LeadsListPage VerifyLeadIsPresent(String firstName) {
+		
+		driver.findElement(By.xpath(String.format("//table[@class='reportTable tabularReportTable']" +
+				"/tbody/tr[@class='even']/td/a[.='%s']", firstName))).isDisplayed();
+		
+		return this;
+	}
 
 }

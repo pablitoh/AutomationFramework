@@ -18,12 +18,12 @@ public class CountryStrategyVenezuela implements CountryStrategy {
 		@FindBy(id="country")
 		private WebElement countrySelect;
 
-		public boolean execute(String firstName, String lastName, String email, String country,
+		public boolean execute(String firstName, String lastName, String email,
 				String state, String city, String telType, String telCode, String tel1, String tel2,
 				String media, String age) {
 			
 			Select selectCountry = new Select(countrySelect);
-			selectCountry.selectByVisibleText(country);
+			selectCountry.selectByVisibleText("Venezuela");
 			
 			driver.findElement(By.id("areaCode1")).sendKeys(telCode);
 			driver.findElement(By.id("phoneNumber11")).sendKeys(tel1);

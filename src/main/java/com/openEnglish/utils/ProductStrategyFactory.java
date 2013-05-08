@@ -1,9 +1,19 @@
 package com.openEnglish.utils;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class ProductStrategyFactory {
 	
-	public boolean getStrategyFor(ProductStrategy product) {
+	@Autowired
+	SharedDriver webdriver;
+	
+	public void getStrategyFor(Products product) throws Exception {
 		
-		return product.execute();		
+		switch ( product ) {
+		
+    	case RegularCourse:				{ 	ProductStrategyRegularCourseFinanced reg = new ProductStrategyRegularCourseFinanced(webdriver.driver);
+    										reg.execute(); break; }
+    	default:						{ throw new Exception();	}
+		}
 	}
 }
