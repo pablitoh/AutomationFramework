@@ -14,7 +14,8 @@ import cucumber.api.junit.Cucumber;;
 @Cucumber.Options(	features = "classpath:features", 
 					format = {"pretty", "html:target/cucumber-htmlreport","json-pretty:target/cucumber-report.json"},
 					glue="com.openEnglish.stepDefinitions",
-					monochrome=true
+					monochrome=true,
+					tags="@test"
 					)
 
 public class TestRunner {
@@ -22,4 +23,5 @@ public class TestRunner {
 	 * Pablo Conde - 6/5/2013 Added: 
 	 * Empty Test runner class needed for Junit.
 	 */
+
 }

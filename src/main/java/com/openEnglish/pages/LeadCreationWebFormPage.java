@@ -3,9 +3,14 @@ package com.openEnglish.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+<<<<<<< HEAD
 import com.openEnglish.utils.Countries;
+=======
+import com.openEnglish.utils.CountryStrategy;
+>>>>>>> 4a95f6b0daceeaede9536def952c12fef233a1ea
 import com.openEnglish.utils.CountryStrategyFactory;
 
 public class LeadCreationWebFormPage {
@@ -15,6 +20,7 @@ public class LeadCreationWebFormPage {
 	public LeadCreationWebFormPage (WebDriver driver) {
 		super();
 		this.driver = driver;
+		PageFactory.initElements(this.driver, this);
 	}
 
 	@FindBy(id="firstName")
@@ -32,7 +38,11 @@ public class LeadCreationWebFormPage {
 
 	
 	
+<<<<<<< HEAD
 	public ProductAdvisorQuestionnairePage CreateWith(String firstName, String lastName, String email, Countries country,
+=======
+	public ProductAdvisorQuestionnairePage CreateWith(String firstName, String lastName, String email, CountryStrategy country,
+>>>>>>> 4a95f6b0daceeaede9536def952c12fef233a1ea
 			String state, String city, String telType, String telCode, String tel1, String tel2,
 			String media, String age) throws Exception {
 		
@@ -40,8 +50,13 @@ public class LeadCreationWebFormPage {
 		lastNameField.sendKeys(lastName);
 		emailField.sendKeys(email);
 		
+<<<<<<< HEAD
 		//WAIT
 		Thread.sleep(5000);
+=======
+		
+		
+>>>>>>> 4a95f6b0daceeaede9536def952c12fef233a1ea
 		CountryStrategyFactory countryStrategy = new CountryStrategyFactory();
 		
 		countryStrategy.getStrategyFor(firstName, lastName, email, country, state, city, telType, telCode, tel1, tel2, media, age);

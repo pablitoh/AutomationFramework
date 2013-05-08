@@ -6,6 +6,7 @@ import com.openEnglish.utils.SharedDriver;
 
 public class CountryStrategyFactory {
 	
+<<<<<<< HEAD
 	@Autowired
 	SharedDriver webdriver;
 	
@@ -23,6 +24,11 @@ public class CountryStrategyFactory {
 												telType, telCode, tel1, tel2, media, age); break; }
     	default:					{ throw new Exception();	}
 		}
+=======
+	public boolean getStrategyFor(CountryStrategy country) {
+		
+		return country.execute(null, null, null, null, null, null, null, null, null, null, null, null);	
+>>>>>>> 4a95f6b0daceeaede9536def952c12fef233a1ea
 	}
 }
 
