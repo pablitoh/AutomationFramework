@@ -11,10 +11,10 @@ import org.openqa.selenium.support.ui.Select;
 
 public class CountryStrategyArgentina implements CountryStrategy {
 		
-		protected final WebDriver driver;
+		private WebDriver driver;
 	
 		public CountryStrategyArgentina(WebDriver driver) {
-			super();
+			
 			this.driver = driver;
 			PageFactory.initElements(this.driver, this);
 		}
@@ -24,22 +24,22 @@ public class CountryStrategyArgentina implements CountryStrategy {
 		
 		public boolean execute(String firstName, String lastName, String email,
 				String state, String city, String telType, String telCode, String tel1, String tel2,
-				String media, String age) {
+				String media, String age) throws InterruptedException {
 			
 			Select selectCountry = new Select(countrySelect);
 			selectCountry.selectByVisibleText("Argentina");
 			
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			Thread.sleep(5000);
 			
 			Select selectState = new Select(driver.findElement(By.id("state")));
 			selectState.selectByVisibleText(state);
 			
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			Thread.sleep(5000);
 			
 			Select selectCity = new Select(driver.findElement(By.id("city")));
 			selectCity.selectByVisibleText(city);
 			
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			Thread.sleep(5000);
 			
 			//Is there a better way to do this?
 			if (telType.contains("Local")) {

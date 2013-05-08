@@ -17,7 +17,7 @@ public class LeadCreationWebFormPage {
 	protected final WebDriver driver;
 	
 	public LeadCreationWebFormPage (WebDriver driver) {
-		super();
+		
 		this.driver = driver;
 		PageFactory.initElements(this.driver, this);
 	}
@@ -48,7 +48,7 @@ public class LeadCreationWebFormPage {
 
 		CountryStrategyFactory countryStrategy = new CountryStrategyFactory();
 		
-		countryStrategy.getStrategyFor(firstName, lastName, email, country, state, city, telType, telCode, tel1, tel2, media, age);
+		countryStrategy.getStrategyFor(firstName, lastName, email, country, state, city, telType, telCode, tel1, tel2, media, age, driver);
 		
 			
 		//Depending on the test cases, this needs to be reviewed in order to change it to Strategy Pattern
