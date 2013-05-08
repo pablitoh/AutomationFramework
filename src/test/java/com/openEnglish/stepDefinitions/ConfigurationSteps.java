@@ -27,6 +27,8 @@ public class ConfigurationSteps {
 	
 	@After
 	public void quit_browser_instance() {	
-		webDriver.driver.quit();
+		
+		if(webDriver.driver!=null)
+			webDriver.driver.quit();
 	}
 }

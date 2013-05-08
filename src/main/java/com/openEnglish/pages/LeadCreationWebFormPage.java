@@ -3,8 +3,10 @@ package com.openEnglish.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import com.openEnglish.utils.CountryStrategy;
 import com.openEnglish.utils.CountryStrategyFactory;
 import com.openEnglish.utils.ProductStrategy;
 
@@ -15,6 +17,7 @@ public class LeadCreationWebFormPage {
 	public LeadCreationWebFormPage (WebDriver driver) {
 		super();
 		this.driver = driver;
+		PageFactory.initElements(this.driver, this);
 	}
 
 	@FindBy(id="firstName")
@@ -32,7 +35,7 @@ public class LeadCreationWebFormPage {
 
 	
 	
-	public ProductAdvisorQuestionnairePage CreateWith(String firstName, String lastName, String email, ProductStrategy country,
+	public ProductAdvisorQuestionnairePage CreateWith(String firstName, String lastName, String email, CountryStrategy country,
 			String state, String city, String telType, String telCode, String tel1, String tel2,
 			String media, String age) throws Exception {
 		
@@ -40,8 +43,7 @@ public class LeadCreationWebFormPage {
 		lastNameField.sendKeys(lastName);
 		emailField.sendKeys(email);
 		
-		//WAIT
-		Thread.sleep(5000);
+		
 		
 		CountryStrategyFactory countryStrategy = new CountryStrategyFactory();
 		
