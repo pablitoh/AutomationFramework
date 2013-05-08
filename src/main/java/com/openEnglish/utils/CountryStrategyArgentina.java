@@ -7,7 +7,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.thoughtworks.selenium.Wait;
 
 public class CountryStrategyArgentina implements CountryStrategy {
 		
@@ -29,17 +33,19 @@ public class CountryStrategyArgentina implements CountryStrategy {
 			Select selectCountry = new Select(countrySelect);
 			selectCountry.selectByVisibleText("Argentina");
 			
-			Thread.sleep(5000);
+			(new WebDriverWait(driver, 30))
+			  .until(ExpectedConditions.textToBePresentInElement(By.id("state"), state));
 			
 			Select selectState = new Select(driver.findElement(By.id("state")));
 			selectState.selectByVisibleText(state);
 			
-			Thread.sleep(5000);
+			(new WebDriverWait(driver, 30))
+			  .until(ExpectedConditions.textToBePresentInElement(By.id("city"), city));
 			
 			Select selectCity = new Select(driver.findElement(By.id("city")));
 			selectCity.selectByVisibleText(city);
 			
-			Thread.sleep(5000);
+			
 			
 			//Is there a better way to do this?
 			if (telType.contains("Local")) {
