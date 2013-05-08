@@ -14,6 +14,7 @@ Then Fill the username and Password with "sarasa" and "conde"
 
 @test
 Scenario Outline: Testing new DataTable implementations
+Given The browser Chrome
 Given Fill the Form with the <First Name>, <Last Name>, <Email>, <Country>, <State>, <City>, <Tel Type>, <Area Code>, <Tel1>, <Tel2>, <Media>, <Age>
 
 Examples:
