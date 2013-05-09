@@ -1,8 +1,12 @@
 package com.openEnglish.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.springframework.util.Assert;
 
 public class ProductAdvisorQuestionnairePage {
 
@@ -38,6 +42,17 @@ public class ProductAdvisorQuestionnairePage {
 	@FindBy(id="sendInfoButton")
 	private WebElement sendInfoButton;
 	
+	public ProductAdvisorQuestionnairePage VerifyScreen() {
+		
+		(new WebDriverWait(driver, 30))
+		  .until(ExpectedConditions.textToBePresentInElement(By.xpath("//div[@class='success_container squestions_container']/" +
+				"h2[text()[contains(.,'Thank you for requesting information')]]"), "Thank you for requesting information"));
+		
+		Assert.isTrue(driver.findElement(By.xpath("//div[@class='success_container squestions_container']/" +
+				"h2[text()[contains(.,'Thank you for requesting information')]]")).isDisplayed());
+		
+		return this;
+	}
 	
 	public SuccessfulRegistrationPage AnswerWith(String yesOrNo, String cc1, String cc2, String debit, String check,
 			String studies) {

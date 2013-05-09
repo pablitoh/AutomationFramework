@@ -16,7 +16,8 @@ Then Fill the username and Password with "sarasa" and "conde"
 Scenario Outline: Testing new DataTable implementations
 Given The browser Firefox
 Given Fill the Form with the <First Name>, <Last Name>, <Email>, <Country>, <State>, <City>, <Tel Type>, <Area Code>, <Tel1>, <Tel2>, <Media>, <Age>
+Then I login to Salesforce using "fnc@openenglish.com.oetest0" as username and "finance0" as password
 
 Examples:
 	|First Name|Last Name|Email                           |Country    |State         |City  |Tel Type|Area Code|Tel1  |Tel2  |Media  |Age              |
-	|"Test2"   |"User123"|"automation+123@openenglish.com"|"Argentina"|"Buenos Aires"|"Amba"|"Mobile"|"null"   |"1234"|"5678"|"Radio"|"19-25 years old"|
+	|"Test40102"   |"User123"|"automation+40102@openenglish.com"|"Argentina"|"Buenos Aires"|"Amba"|"Mobile"|"null"   |"1234"|"5678"|"Radio"|"19-25 years old"|

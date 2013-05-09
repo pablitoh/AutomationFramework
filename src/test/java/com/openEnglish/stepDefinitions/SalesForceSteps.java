@@ -13,20 +13,22 @@ import cucumber.api.java.en.Then;
 public class SalesForceSteps {
 
 	@Autowired
-	SharedDriver webdriver;
+	SharedDriver webDriver;
 	
 	
-	@Then("Logs in SalesForce")
+	@Then("^I login to Salesforce using \"([^\"]*)\" as username and \"([^\"]*)\" as password$")
 	public void LogInSalesForce(String userName, String password) {
 		
-		SFLoginPage loginPage = new SFLoginPage(webdriver.driver);
+		webDriver.driver.get("https://test.salesforce.com/");
+		
+		SFLoginPage loginPage = new SFLoginPage(webDriver.driver);
 		loginPage.Login(userName, password);
 	}
 	
 	@Then("Verify XXXX is present")
 	public void VerifyLeadCreation(String firstName) {
 		
-		LeadsListPage leadsListPage = new LeadsListPage(webdriver.driver);
+		LeadsListPage leadsListPage = new LeadsListPage(webDriver.driver);
 		leadsListPage.VerifyLeadIsPresent(firstName);
 	}
 	
