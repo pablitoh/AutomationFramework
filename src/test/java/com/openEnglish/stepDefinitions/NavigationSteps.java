@@ -35,7 +35,7 @@ public class NavigationSteps {
 	{
 		LeadCreationWebFormPage webform = new LeadCreationWebFormPage(webDriver.driver);
 		webDriver.driver.get("http://stage.thinkglish.com/inicio.do");
-		webform.CreateWith(firstName, lastName, email, country, state, city, telType, areaCode, tel1, tel2, media, age);
+		webform.FillArgentina(firstName, lastName, email, country, state, city, telType, areaCode, tel1, tel2, media, age);
 		
 	}
 }
