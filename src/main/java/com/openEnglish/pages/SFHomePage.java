@@ -12,7 +12,6 @@ public class SFHomePage {
 	protected final WebDriver driver;
 	
 	public SFHomePage (WebDriver driver) {
-		super();
 		this.driver = driver;
 		PageFactory.initElements(this.driver, this);
 	}

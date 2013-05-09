@@ -5,6 +5,7 @@ import com.openEnglish.pages.ClientAccountPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 
 public class ConvertLeadToAccountPage {
@@ -12,8 +13,9 @@ public class ConvertLeadToAccountPage {
 	protected final WebDriver driver;
 	
 	public ConvertLeadToAccountPage(WebDriver driver) {
-		super();
 		this.driver = driver;
+		PageFactory.initElements(this.driver, this);
+
 	}
 	
 	@FindBy(name="convert")

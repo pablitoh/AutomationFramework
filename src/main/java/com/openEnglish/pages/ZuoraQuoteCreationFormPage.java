@@ -3,6 +3,7 @@ package com.openEnglish.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 public class ZuoraQuoteCreationFormPage {
@@ -10,8 +11,9 @@ public class ZuoraQuoteCreationFormPage {
 	protected final WebDriver driver;
 	
 	public ZuoraQuoteCreationFormPage(WebDriver driver) {
-		super();
 		this.driver = driver;
+		PageFactory.initElements(this.driver, this);
+		
 	}
 	
 	@FindBy(id="asdf:quoteForm:quoteblock:SubscriptionTermsBlock:paymentMethod")

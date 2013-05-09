@@ -4,14 +4,16 @@ import com.openEnglish.pages.ClientAccountPage;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 
 public class AccountsListPage {
 
 	protected final WebDriver driver;
 	
 	public AccountsListPage(WebDriver driver) {
-		super();
 		this.driver = driver;
+		PageFactory.initElements(this.driver, this);
+
 	}
 	
 	public ClientAccountPage GoToClientAccount(String firstName, String lastName) {

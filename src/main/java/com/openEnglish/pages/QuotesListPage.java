@@ -2,14 +2,16 @@ package com.openEnglish.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 
 public class QuotesListPage {
 	
 	protected final WebDriver driver;
 	
 	public QuotesListPage(WebDriver driver) {
-		super();
 		this.driver = driver;
+		PageFactory.initElements(this.driver, this);
+
 	}
 	
 	public QuoteDetailsPage GoToQuoteDetails(String firstName, String lastName) {

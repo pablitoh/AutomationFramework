@@ -10,7 +10,6 @@ public class SFLoginPage {
 	protected final WebDriver driver;
 	
 	public SFLoginPage(WebDriver driver) {
-		super();
 		this.driver = driver;
 		PageFactory.initElements(this.driver, this);
 	}

@@ -2,14 +2,16 @@ package com.openEnglish.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 
 public class ZuoraLoginPage {
 
 	protected final WebDriver driver;
 	
 	public ZuoraLoginPage(WebDriver driver) {
-		super();
 		this.driver = driver;
+		PageFactory.initElements(this.driver, this);
+
 	}
 
 	public ZuoraHomePage Login(String userName, String password) {

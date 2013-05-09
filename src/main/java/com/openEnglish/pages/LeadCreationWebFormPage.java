@@ -17,7 +17,6 @@ public class LeadCreationWebFormPage {
 	protected final WebDriver driver;
 	
 	public LeadCreationWebFormPage (WebDriver driver) {
-		
 		this.driver = driver;
 		PageFactory.initElements(this.driver, this);
 	}

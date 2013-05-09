@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.util.Assert;
@@ -13,8 +14,8 @@ public class ProductAdvisorQuestionnairePage {
 	protected final WebDriver driver;
 	
 	public ProductAdvisorQuestionnairePage (WebDriver driver) {
-		super();
 		this.driver = driver;
+		PageFactory.initElements(this.driver, this);
 	}
 	
 	@FindBy(id="q1a")
@@ -64,13 +65,13 @@ public class ProductAdvisorQuestionnairePage {
 			noRadial.click();
 		
 		
-		if(cc1 != null)
+		if(cc1.length() > 1)
 			cc1Radial.click();
-		if(cc2 != null)
+		if(cc2.length() > 1)
 			cc2Radial.click();
-		if(debit != null)
+		if(debit.length() > 1)
 			debitRadial.click();
-		if(check != null)
+		if(check.length() > 1)
 			checkingOrSavingsRadial.click(); 
 		
 		

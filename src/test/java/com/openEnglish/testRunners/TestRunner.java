@@ -15,7 +15,7 @@ import cucumber.api.junit.Cucumber;;
 					format = {"pretty", "html:target/cucumber-htmlreport","json-pretty:target/cucumber-report.json"},
 					glue="com.openEnglish.stepDefinitions",
 					monochrome=true,
-					tags="@test"
+					tags="@testflow"
 					)
 
 public class TestRunner {

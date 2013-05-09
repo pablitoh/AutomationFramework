@@ -14,8 +14,7 @@ public class ZuoraPage {
 	
 	private WebDriver driver;
 
-	public ZuoraPage(WebDriver driver)
-	{
+	public ZuoraPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(this.driver, this);
 	}
