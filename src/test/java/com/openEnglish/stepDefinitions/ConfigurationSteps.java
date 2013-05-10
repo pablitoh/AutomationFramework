@@ -24,6 +24,11 @@ public class ConfigurationSteps {
 	    public void selectBrowser(Browsers browser) throws Exception {
 		 webDriver.driver=  new BrowserManager().chooseBrowser(browser);	
 	    }
+	 @Then("Pause")
+	 public void pauseEverything() throws InterruptedException
+	 {
+		 Thread.sleep(10000);
+	 }
 	
 	@After
 	public void quit_browser_instance() {	

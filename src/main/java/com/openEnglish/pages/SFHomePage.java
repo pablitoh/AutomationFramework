@@ -16,7 +16,7 @@ public class SFHomePage {
 		PageFactory.initElements(this.driver, this);
 	}
 
-	@FindBy(xpath="//li[@id='Lead_Tab']/a")
+	@FindBy(id="Lead_Tab")
 	private WebElement leadsTab;
 	
 	public LeadsHomePage GoToLeadsHome() {

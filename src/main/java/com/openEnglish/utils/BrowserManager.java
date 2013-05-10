@@ -1,6 +1,8 @@
 package com.openEnglish.utils;
 
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -21,6 +23,7 @@ public class BrowserManager {
 	    									driver = new InternetExplorerDriver(); 	break; }
 	    	default:				{ throw new Exception();	}
 		}
+    	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     	return driver;
     	
     }

@@ -4,14 +4,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.openEnglish.pages.ClientAccountPage;
 import com.openEnglish.pages.ConvertLeadToAccountPage;
+import com.openEnglish.pages.LeadsHomePage;
 import com.openEnglish.pages.LeadsListPage;
 import com.openEnglish.pages.OpportunityPage;
+import com.openEnglish.pages.SFHomePage;
 import com.openEnglish.pages.SFLoginPage;
 import com.openEnglish.pages.ZuoraQuoteCreationFormPage;
 import com.openEnglish.pages.ZuoraQuoteRadialsPage;
 import com.openEnglish.utils.SharedDriver;
 
-import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
 
@@ -30,12 +31,15 @@ public class SalesForceSteps {
 		loginPage.Login(userName, password);
 	}
 	
-	@Then("Verify XXXX is present")
-	public void VerifyLeadCreation(String firstName) {
+	@Then("^Verify the user \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\" is present in Salesforce$")
+	public void VerifyLeadCreation(String firstName, String lastName, String email) {
 		
-		LeadsListPage leadsListPage = new LeadsListPage(webDriver.driver);
-		leadsListPage.VerifyLeadIsPresent(firstName);
+		SFHomePage homePage = new SFHomePage(webDriver.driver);
+		LeadsHomePage leadsHomePage = homePage.GoToLeadsHome();
+		LeadsListPage leadsListPage = leadsHomePage.GoToLeadsList();
+		leadsListPage.VerifyLeadIsPresent(firstName,lastName,email);
 	}
+
 	
 	@Then("^I convert the Lead to Account")
 	public void ConvertLeadToAccount() {

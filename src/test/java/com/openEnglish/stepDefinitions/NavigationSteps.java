@@ -38,8 +38,8 @@ public class NavigationSteps {
 		webDriver.driver.get("http://stage.thinkglish.com/inicio.do");
 		webform.FillArgentina(firstName, lastName, email, country, state, city, telType, areaCode, tel1, tel2, media, age);
 		
-		ProductAdvisorQuestionnairePage questionnaire = new ProductAdvisorQuestionnairePage(webDriver.driver);
-		questionnaire.VerifyScreen();
+		//ProductAdvisorQuestionnairePage questionnaire = new ProductAdvisorQuestionnairePage(webDriver.driver);
+		//questionnaire.VerifyScreen();
 		
 	}
 	
