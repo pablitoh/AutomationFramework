@@ -41,10 +41,6 @@ public LeadsListPage VerifyLeadIsPresent(String firstName, String lastName, Stri
 				
 				if(listCell.size()>1)
 				{
-					System.out.println(listCell.get(0).getText());
-					System.out.println(listCell.get(1).getText());
-					System.out.println(listCell.get(4).getText());
-					
 					if(listCell.get(0).getText().equalsIgnoreCase(firstName) && listCell.get(1).getText().equalsIgnoreCase(lastName) && listCell.get(4).getText().equalsIgnoreCase(email))
 					{
 						listCell.get(0).findElement(By.tagName("a")).click();

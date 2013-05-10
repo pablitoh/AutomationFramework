@@ -1,5 +1,6 @@
 package com.openEnglish.stepDefinitions;
 
+import org.openqa.selenium.support.ui.Wait;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.openEnglish.pages.ClientAccountPage;
@@ -7,10 +8,13 @@ import com.openEnglish.pages.ConvertLeadToAccountPage;
 import com.openEnglish.pages.LeadsHomePage;
 import com.openEnglish.pages.LeadsListPage;
 import com.openEnglish.pages.OpportunityPage;
+import com.openEnglish.pages.ProductSelectionPage;
+import com.openEnglish.pages.QuoteDetailsPage;
 import com.openEnglish.pages.SFHomePage;
 import com.openEnglish.pages.SFLoginPage;
 import com.openEnglish.pages.ZuoraQuoteCreationFormPage;
 import com.openEnglish.pages.ZuoraQuoteRadialsPage;
+import com.openEnglish.utils.Products;
 import com.openEnglish.utils.SharedDriver;
 
 import cucumber.api.java.en.Then;
@@ -53,11 +57,11 @@ public class SalesForceSteps {
 		
 		ClientAccountPage opportunity = new ClientAccountPage(webDriver.driver);
 		opportunity.GoToOpportunity();
+		
 	}
 	
 	@Then("^I create the Zuora quote")
 	public void createZuoraQuote() {
-		
 		OpportunityPage zuoraQuote = new OpportunityPage(webDriver.driver);
 		zuoraQuote.GoToZuoraQuotePage();
 	}
@@ -75,6 +79,16 @@ public class SalesForceSteps {
 		ZuoraQuoteCreationFormPage fillForm = new ZuoraQuoteCreationFormPage(webDriver.driver);
 		fillForm.CreateQuote();
 	}
+	@Then("^I select the regular product")
+	public void select_product() throws Exception
+	{
+		QuoteDetailsPage quoteDetails = new QuoteDetailsPage(webDriver.driver);
+		ProductSelectionPage productSelection = quoteDetails.GoToProductSelection();
+		productSelection.SelectProduct();
+
+	}
+	
+	
 	
 	
 		

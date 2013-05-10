@@ -14,10 +14,9 @@ public class OpportunityPage {
 	public OpportunityPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(this.driver, this);
-
 	}
 	
-	@FindBy(xpath="//td[@id='topButtonRow']/input[@title='New Zuora Quote']")
+	@FindBy(xpath="//*[@id='bottomButtonRow']/input[7]")
 	private WebElement newZuoraQuoteButton;
 	
 	public ZuoraQuoteRadialsPage GoToZuoraQuotePage() {
