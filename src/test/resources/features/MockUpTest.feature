@@ -24,11 +24,12 @@ Then I create the Zuora quote
 Then I complete the radial page
 Then I fill the Quote form
 Then I select the regular product
+Then I submit the contract with <Dni>, <ccType>, <ccNumber>, <ccDate>, <First Name>, <Last Name>, <cvv>
 Then Pause
 
 Examples:
-	|First Name|Last Name|Email                           |Country    |State         |City  |Tel Type|Area Code|Tel1  |Tel2  |Media  |Age              |
-	|"Test98888"   |"User999"|"automation+98888@openenglish.com"|"Argentina"|"Buenos Aires"|"Amba"|"Mobile"|"null"   |"1234"|"5678"|"Radio"|"19-25 years old"|
+	|First Name|Last Name|Email                           |Country    |State         |City  |Tel Type|Area Code|Tel1  |Tel2  |Media  |Age              | Dni | ccType | ccNumber| ccDate | cvv|
+	|"Test666711"   |"User999"|"automation+666711@openenglish.com"|"Argentina"|"Buenos Aires"|"Amba"|"Mobile"|"null"   |"1234"|"5678"|"Radio"|"19-25 years old"| "111111111" | "Visa" | "4012888888881881" | "10/15" | "123"| 
 	
 @test
 Scenario: Testing

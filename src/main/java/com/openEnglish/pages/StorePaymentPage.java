@@ -42,8 +42,10 @@ public class StorePaymentPage {
 	@FindBy(id="confirm")
 	private WebElement confirmButton;	
 	
-	public void PayWith(String dni, String ccType, String ccNumber, String ccExpiryMonth, 
-			String ccExpiryYear, String firstName, String lastName, String cvv) {
+	public void PayWith(String dni, String ccType, String ccNumber, String ccDate, String firstName, String lastName, String cvv) {
+		
+		String[] date = ccDate.split("/");
+		System.out.println("Fecha de vencimiento: "+ date[0]);
 		
 		dniField.sendKeys(dni);
 		
@@ -53,10 +55,10 @@ public class StorePaymentPage {
 		creditCardNumberField.sendKeys(ccNumber);
 	
 		Select ccExpiryMonthSelect = new Select(expiryMonthSelect);
-		ccExpiryMonthSelect.selectByVisibleText(ccExpiryMonth);
+		ccExpiryMonthSelect.selectByVisibleText(date[0]);
 		
 		Select ccExpiryYearSelect = new Select(expiryYearSelect);
-		ccExpiryYearSelect.selectByVisibleText(ccExpiryYear);
+		ccExpiryYearSelect.selectByVisibleText(date[1]);
 
 		cardHolderNameField.clear();
 		cardHolderNameField.sendKeys(firstName + lastName);

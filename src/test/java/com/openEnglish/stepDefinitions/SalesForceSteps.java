@@ -1,5 +1,6 @@
 package com.openEnglish.stepDefinitions;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Wait;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -12,6 +13,7 @@ import com.openEnglish.pages.ProductSelectionPage;
 import com.openEnglish.pages.QuoteDetailsPage;
 import com.openEnglish.pages.SFHomePage;
 import com.openEnglish.pages.SFLoginPage;
+import com.openEnglish.pages.StorePaymentPage;
 import com.openEnglish.pages.ZBillingPage;
 import com.openEnglish.pages.ZuoraQuoteCreationFormPage;
 import com.openEnglish.pages.ZuoraQuoteRadialsPage;
@@ -89,6 +91,14 @@ public class SalesForceSteps {
 		ZBillingPage zbillingPage = quoteDetails.GoToZbilling();
 		quoteDetails = zbillingPage.SendToZBilling();
 		quoteDetails.goToStore();
+		
+	}
+	
+	@Then("^I submit the contract with \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\"$")
+	public void submit_contract_in_Store(String dni, String ccType, String ccNumber,  String ccDate, String firstName, String lastName, String cvv)
+	{
+		StorePaymentPage storePayment = new StorePaymentPage(webDriver.driver);
+		storePayment.PayWith(dni, ccType, ccNumber, ccDate, firstName, lastName, cvv);
 	}
 	
 	
