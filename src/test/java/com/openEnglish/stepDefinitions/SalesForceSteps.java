@@ -12,6 +12,7 @@ import com.openEnglish.pages.ProductSelectionPage;
 import com.openEnglish.pages.QuoteDetailsPage;
 import com.openEnglish.pages.SFHomePage;
 import com.openEnglish.pages.SFLoginPage;
+import com.openEnglish.pages.ZBillingPage;
 import com.openEnglish.pages.ZuoraQuoteCreationFormPage;
 import com.openEnglish.pages.ZuoraQuoteRadialsPage;
 import com.openEnglish.utils.Products;
@@ -84,9 +85,12 @@ public class SalesForceSteps {
 	{
 		QuoteDetailsPage quoteDetails = new QuoteDetailsPage(webDriver.driver);
 		ProductSelectionPage productSelection = quoteDetails.GoToProductSelection();
-		productSelection.SelectProduct();
-
+		quoteDetails = productSelection.SelectProduct();
+		ZBillingPage zbillingPage = quoteDetails.GoToZbilling();
+		quoteDetails = zbillingPage.SendToZBilling();
+		quoteDetails.goToStore();
 	}
+	
 	
 	
 	

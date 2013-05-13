@@ -18,6 +18,12 @@ public class QuoteDetailsPage {
 	
 	@FindBy(xpath="//td[@id='topButtonRow']/input[@value='Select / View Products']")
 	private WebElement selectProductsButton;
+	@FindBy(xpath="//a[.='Send to Z-Billing']")
+	private WebElement sendToZuoraLink;
+	@FindBy(xpath="//div[@id='CF00N400000023oTD_ileinner']/a")
+	private WebElement opportunity;
+	@FindBy(linkText="Store URL")
+	private WebElement storeLink;
 	
 	public ProductSelectionPage GoToProductSelection() {
 		
@@ -26,8 +32,6 @@ public class QuoteDetailsPage {
 		return new ProductSelectionPage(driver);
 	}
 	
-	@FindBy(xpath="//a[.='Send to Z-Billing']")
-	private WebElement sendToZuoraLink;
 	
 	public ZBillingPage GoToZbilling() {
 		
@@ -36,13 +40,16 @@ public class QuoteDetailsPage {
 		return new ZBillingPage(driver);
 	}
 	
-	@FindBy(xpath="//div[@id='CF00N400000023oTD_ileinner']/a")
-	private WebElement opportunity;
-	
 	public OpportunityPage GoToOpportunity() {
 		opportunity.click();
 		
 		return new OpportunityPage(driver);
+	}
+	
+	public StorePaymentPage goToStore()
+	{
+	driver.get(storeLink.getAttribute("href"));
+	return new StorePaymentPage(driver);
 	}
 	
 	
