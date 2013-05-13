@@ -1,11 +1,15 @@
 package com.openEnglish.stepDefinitions;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriverException;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.openEnglish.utils.BrowserManager;
 import com.openEnglish.utils.Browsers;
 import com.openEnglish.utils.SharedDriver;
 
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.en.*;
 
@@ -30,10 +34,19 @@ public class ConfigurationSteps {
 		 Thread.sleep(10000);
 	 }
 	
-	@After
-	public void quit_browser_instance() {	
-		
-		if(webDriver.driver!=null)
-			webDriver.driver.quit();
-	}
+	 @After  
+     public void embedScreenshot(Scenario scenario) {  
+         if (scenario.isFailed()) {  
+             try {  
+                 byte[] screenshot = ((TakesScreenshot) webDriver.driver).getScreenshotAs(OutputType.BYTES);  
+                 scenario.embed(screenshot, "image/png");  
+             } catch (WebDriverException wde) {  
+                 System.err.println(wde.getMessage());  
+             } catch (ClassCastException cce) {  
+                 cce.printStackTrace();  
+             }  
+         }
+         if(webDriver.driver!=null)
+ 			webDriver.driver.quit(); 
+     }  
 }

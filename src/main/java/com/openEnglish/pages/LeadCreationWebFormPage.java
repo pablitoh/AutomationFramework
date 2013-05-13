@@ -55,6 +55,10 @@ public class LeadCreationWebFormPage {
 			String state, String city, String telType, String telCode, 
 			String tel1, String tel2, String media, String age) throws Exception {
 		
+		firstNameField.clear();
+		lastNameField.clear();
+		emailField.clear();
+		
 		firstNameField.sendKeys(firstName);
 		lastNameField.sendKeys(lastName);
 		emailField.sendKeys(email);

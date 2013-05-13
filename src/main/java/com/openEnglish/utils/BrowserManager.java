@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class BrowserManager {
@@ -21,9 +22,10 @@ public class BrowserManager {
 	    	case InternetExplorer:		{	
 	    									System.setProperty("webdriver.ie.driver", "IEDriverServer.exe");
 	    									driver = new InternetExplorerDriver(); 	break; }
+	    	case HtmlUnitDriver: 	{ driver = new HtmlUnitDriver(); break;}
 	    	default:				{ throw new Exception();	}
 		}
-    	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
     	return driver;
     	
     }

@@ -12,7 +12,7 @@ Given The browser InternetExplorer
 Given Im on Zuora Page
 Then Fill the username and Password with "sarasa" and "conde"
 
-@wip
+@wipi
 Scenario Outline: Testing new DataTable implementations
 Given The browser Firefox
 Given Fill the Form with the <First Name>, <Last Name>, <Email>, <Country>, <State>, <City>, <Tel Type>, <Area Code>, <Tel1>, <Tel2>, <Media>, <Age>
@@ -28,8 +28,8 @@ Then I submit the contract with <Dni>, <ccType>, <ccNumber>, <ccDate>, <First Na
 Then Pause
 
 Examples:
-	|First Name|Last Name|Email                           |Country    |State         |City  |Tel Type|Area Code|Tel1  |Tel2  |Media  |Age              | Dni | ccType | ccNumber| ccDate | cvv|
-	|"Test666711"   |"User999"|"automation+666711@openenglish.com"|"Argentina"|"Buenos Aires"|"Amba"|"Mobile"|"null"   |"1234"|"5678"|"Radio"|"19-25 years old"| "111111111" | "Visa" | "4012888888881881" | "10/15" | "123"| 
+	|First Name		|Last Name|Email							|Country    |State         |City  |Tel Type|Area Code|Tel1  |Tel2  |Media  |Age              | Dni | ccType | ccNumber					   | ccDate  | cvv|
+	|"Tes2112"   |"User99953"|"automation+2112@openenglish.com"|"Argentina"|"Buenos Aires"|"Amba"|"Mobile"|"null"   |"1234"|"5678"|"Radio"|"19-25 years old"| "111111111" | "Visa" | "4012888888881881" | "10/15" | "123"| 
 	
 @test
 Scenario: Testing

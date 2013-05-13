@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class ProductSelectionPage {
@@ -28,7 +30,7 @@ public class ProductSelectionPage {
 		driver.findElement(By.id("quoting_page:quoting_form:quoting_page_block:j_id28:searchField")).sendKeys("Regular Course");
 		driver.findElement(By.id("quoting_page:quoting_form:quoting_page_block:j_id28:btnSearchProducts")).click();
 		
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
 		
 		List<WebElement> productList = driver.findElements(By.xpath("//div[@class='Custom5Block']/div[@id='quoting_page:" +
 				"quoting_form:quoting_page_block:j_id28:product_zselect_table:j_id34:listtable_pageblock']/div/span/" +
@@ -37,7 +39,7 @@ public class ProductSelectionPage {
 		
 		productList.get(0).click();
 		
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
 		
 		List<WebElement> ratePlanList = driver.findElements(By.xpath("//div[@class='Custom5Block']/div[@id='quoting_page:" +
 				"quoting_form:quoting_page_block:j_id28:rateplan_zselect_table:j_id54:listtable_pageblock']/div/span/" +
@@ -45,7 +47,9 @@ public class ProductSelectionPage {
 				"img[@src='/resource/1356042819000/zqu__radioBtnUnChk']"));
 		
 		ratePlanList.get(0).click();
-
+		
+		(new WebDriverWait(driver, 50))
+		  .until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Save']")));
 		saveButton.click();
 		
 		return new QuoteDetailsPage(driver);

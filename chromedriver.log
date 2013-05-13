@@ -1,73 +1,491 @@
-[0509/092549:INFO:chromedriver_server.cc(76)] Handling request: /status 
-[0509/092549:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"","status":0,"value":{"build":{"version":"alpha"},"os":{"arch":"x86_64","name":"Windows NT","version":"6.1"}}}
-[0509/092549:INFO:chromedriver_server.cc(76)] Handling request: /session {"desiredCapabilities":{"platform":"ANY","browserName":"chrome","chromeOptions":{"args":[],"extensions":[]},"version":"","chrome.switches":[]}}
-[0509/092549:INFO:chrome_launcher.cc(74)] Using chrome from C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
-[0509/092557:INFO:chromedriver_server.cc(81)] Done handling request: 303 
-[0509/092557:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b 
-[0509/092557:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":{"acceptSslCerts":true,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","cssSelectorsEnabled":true,"databaseEnabled":true,"driverVersion":"0.8","handlesAlerts":true,"javascriptEnabled":true,"locationContextEnabled":true,"nativeEvents":true,"platform":"Windows NT","rotatable":false,"takesScreenshot":true,"version":"26.0.1410.64","webStorageEnabled":true}}
-[0509/092557:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/url {"url":"http://stage.thinkglish.com/inicio.do"}
-[0509/092607:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":null}
-[0509/092607:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element {"using":"id","value":"firstName"}
-[0509/092610:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":{"ELEMENT":"0.6720860940404236:1"}}
-[0509/092610:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element/0.6720860940404236:1/value {"id":"0.6720860940404236:1","value":["Test2"]}
-[0509/092613:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":null}
-[0509/092613:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element {"using":"id","value":"lastName"}
-[0509/092615:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":{"ELEMENT":"0.6720860940404236:2"}}
-[0509/092615:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element/0.6720860940404236:2/value {"id":"0.6720860940404236:2","value":["User123"]}
-[0509/092618:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":null}
-[0509/092618:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element {"using":"id","value":"email"}
-[0509/092621:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":{"ELEMENT":"0.6720860940404236:3"}}
-[0509/092621:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element/0.6720860940404236:3/value {"id":"0.6720860940404236:3","value":["automation+123@openenglish.com"]}
-[0509/092623:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":null}
-[0509/092623:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element {"using":"id","value":"country"}
-[0509/092626:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":{"ELEMENT":"0.6720860940404236:4"}}
-[0509/092626:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element/0.6720860940404236:4/name 
-[0509/092628:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":"select"}
-[0509/092628:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element {"using":"id","value":"country"}
-[0509/092631:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":{"ELEMENT":"0.6720860940404236:4"}}
-[0509/092631:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element/0.6720860940404236:4/attribute/multiple 
-[0509/092634:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":null}
-[0509/092634:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element {"using":"id","value":"country"}
-[0509/092636:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":{"ELEMENT":"0.6720860940404236:4"}}
-[0509/092636:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element/0.6720860940404236:4/elements {"id":"0.6720860940404236:4","using":"xpath","value":".//option[normalize-space(.) = \"Argentina\"]"}
-[0509/092639:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":[{"ELEMENT":"0.6720860940404236:5"},{"ELEMENT":"0.6720860940404236:6"}]}
-[0509/092639:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element/0.6720860940404236:5/selected 
-[0509/092641:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":false}
-[0509/092641:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element/0.6720860940404236:5/click {"id":"0.6720860940404236:5"}
-[0509/092644:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":null}
-[0509/092644:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element {"using":"id","value":"state"}
-[0509/092647:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":{"ELEMENT":"0.6720860940404236:7"}}
-[0509/092647:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element/0.6720860940404236:7/text 
-[0509/092649:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":"     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      Region of residenceBuenos AiresCatamarcaChacoChubutCordobaCorrientesEntre RiosFormosaJujuyLa PampaLa RiojaMendozaMisionesNeuquenRio NegroSaltaSan JuanSan LuisSanta CruzSanta FeSantiago Del EsteroTierra Del FuegoTucuman"}
-[0509/092649:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element {"using":"id","value":"state"}
-[0509/092652:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":{"ELEMENT":"0.6720860940404236:7"}}
-[0509/092652:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element/0.6720860940404236:7/name 
-[0509/092654:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":"select"}
-[0509/092654:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element {"using":"id","value":"state"}
-[0509/092657:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":{"ELEMENT":"0.6720860940404236:7"}}
-[0509/092657:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element/0.6720860940404236:7/attribute/multiple 
-[0509/092659:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":null}
-[0509/092659:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element {"using":"id","value":"state"}
-[0509/092702:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":{"ELEMENT":"0.6720860940404236:7"}}
-[0509/092702:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element/0.6720860940404236:7/elements {"id":"0.6720860940404236:7","using":"xpath","value":".//option[normalize-space(.) = \"Buenos Aires\"]"}
-[0509/092705:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":[{"ELEMENT":"0.6720860940404236:8"}]}
-[0509/092705:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element/0.6720860940404236:8/selected 
-[0509/092707:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":false}
-[0509/092707:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element/0.6720860940404236:8/click {"id":"0.6720860940404236:8"}
-[0509/092710:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":null}
-[0509/092710:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element {"using":"id","value":"city"}
-[0509/092712:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":{"ELEMENT":"0.6720860940404236:9"}}
-[0509/092712:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element/0.6720860940404236:9/text 
-[0509/092715:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":"City12 De Octubre17 De Agosto25 De Mayo (Prov. Buenos Aires)30 De Agosto9 De Julio (Prov. Buenos Aires)AbastoAbbottAcevedoAdolfo Gonzalez ChavesAgustinaAgustin RocaAlbertiAlejandro KornAlejandro PetionAlgarroboAlsinaAltamirano (Prov. Buenos Aires)Alvarez De ToledoAmbaAmeghinoAmericaAntonio CarboniAparicioArboledasArenazaArgerichArrecifesArribe\u00F1osArroyo CortoArroyo DulceAscencionAtalayaAyacuchoAzcuenagaAzulBahia BlancaBaigorritaBajo HondoBalcarceBalneario Pehuen CoBanderaloBaraderoBarrio El CasalBarrio La ArmoniaBarrio Mi RinconBarrio Parque Pe\u00F1aBarrio Parque SicardiBarrio San EduardoBarrio San EstebanBartolome BavioBatanBayaucaBellocqBenavidezBenitezBenito JuarezBernasconiBeruttiBlaquierBolivarBonifacioBordenaveBragadoBrahmaCabildoCachariCadretCampanaCampos SallesCa\u00F1ada Seca (Prov. Buenos Aires)Ca\u00F1uelasCapilla Del Se\u00F1orCapital FederalCapitan SarmientoCarabelasCarhueCariloCarlos BeguerieCarlos CasaresCarlos KeenCarlos Maria NaonCarlos SalasCarlos SpegazziniCarlos TejedorCarmen De ArecoCasbasCastelliCastillaCazonChacabucoChascomusChasicoChiclanaChillarChivilcoyClarazClaromecoColonia BarraganColonia SereColon (Prov. Buenos Aires)Comandante N. OtamendiComodoro PyConesaCopetonasCoronel BrandsenCoronel CharloneCoronel DorregoCoronel GranadaCoronel MomCoronel PringlesCoronel SuarezCoronel VidalCucha CuchaCuculluCuraruDaireauxDarregueiraDe La GarmaDel CarrilDel VisoDennehyDerquiDique LujanDolores (Prov. Buenos Aires)DomselaarDrableDudignacDufaurDugganEl ArbolitoEl DiaEl DoradoEl FaroElordiEl ParaisoEl PatoEl PerdidoEl SocorroEl TriunfoElviraEmilio BungeErizeErnestinaEscobarEspartillarEspigasEstacion CametEstacion GomezEstacion Vi\u00F1aEsteban Agustin GasconFatimaFelipe SolaFerreFlandriaFontezuelaFortin OlavarriaFortin TiburcioFrancisco AlvarezFrancisco MaderoFrenchGahanGardeyGarinGarreGeneral Alvear (Prov. Buenos Aires)General ArenalesGeneral BelgranoGeneral Conesa (Prov. Buenos Aires)General GuidoGeneral LamadridGeneral Las HerasGeneral Lavalle (Prov. Buenos Aires)General MadariagaGeneral PintoGeneral PiranGeneral RivasGeneral RodriguezGeneral RojoGeneral San Martin (Prov. Buenos Aires)General VillegasGermaniaGlewGobernador CastroGobernador UgarteGonzalez CatanGorchsGorostiagaGoyenaGran Buenos AiresGrand BourgGuaminiGuanacoGuatracheGuernicaGuerricoHaleHendersonHilario AscasubiHinojoHuanguelen SurIndio RicoInes IndartIngeniero MaschwitzIngeniero ThomsonIng. Romulo OtamendiIralaIreneo PortelaIriarteIsla Martin GarciaJacinto ArauzJeppenerJose C. PazJose FerrariJuan A. PradereJuan B. AlberdiJuan De La Pe\u00F1aJuan E.BarraJuan Jose PasoJuan Maria GutierrezJuan N. FernandezJuncalJunin (Prov. Buenos Aires)La AngelitaLabardenLa Brava (Prov. Buenos Aires)La CapillaLa ColinaLa DulceLa LonjaLa Ni\u00F1aLa PlataLa PosadaLapridaLa RicaLas ArmasLas Dos MariasLas Flores (Prov. Buenos Aires)Las MarianasLas MartinetasLas PiedritasLas Toscas (Prov. Buenos Aires)La VioletaLeandro N. Alem (Prov. Buenos Aires)LezamaLibanoLibertadLimaLincolnLisandro OlmosLoberiaLobosLoma VerdeLopez CameloLos CardalesLos OrtizLos PinosLos Toldos (Prov. Buenos Aires)Lujan (Prov. Buenos Aires)MagdalaMagdalenaMaipu (Prov. Buenos Aires)Manuel OcampoMaquinista SavioMar ChiquitaMarcos PazMar De AjoMar Del PlataMar Del SurMariano AcostaMariano BenitezMartinez De HozMatheuMauricio HirschMayor BuratovichMechitaMechongueMedanos (Prov. Buenos Aires)Mercedes (Prov. Buenos Aires)Merlo (Prov. Buenos Aires)M. H. AlfonzoMicaela CascallaresMiramar (Prov. Buenos Aires)MoctezumaMones CazonMonteMonte HermosoMoquehuaMoreaMorenoMorseMosconiNapaleofuNavarroNecocheaNorberto De La RiestraNorumbegaNueva PlataNueva RomaO' BrienO\u00B4HigginsOlavarriaOlidenOliveraOpen DoorOrenseOrientePalemon HuergoParada RoblesParaje El TaladroParaje Sauce ChicoParque Industrial PilarPasteurPatriciosPearsonPedernalesPedro LuroPehuajoPellegriniPerez MillanPergaminoPiedritas (Prov. Buenos Aires)PieresPig\u00FCePilaPilar (Prov. Buenos Aires)PinamarPinzonPipinasPirovanoPlaPlaya ChapadmalalPlommerPobletPolvaredas (Prov. Buenos Aires)PontevedraPuanPueblo Del VallePuerto BelgranoPunta AltaPunta IndioQuenumaQuirogaRafael ObligadoRamalloRamon BiausRamon SantamarinaRancaguaRanchosRauchRawson (Prov. Buenos Aires)RecaldeRetaRio TalaRiveraRobertsRojasRooseveltRoque PerezSaavedraSaforcadaSaladillo (Prov. Buenos Aires)SalazarSaldungaraySalliqueloSaltoSalvador MariaSan Agustin (Prov. Buenos Aires)San Andres De GilesSan Antonio De ArecoSan Bernardo (Prov. Buenos Aires)San CayetanoSan Clemente Del TuyuSan Eduardo Del MarSan EnriqueSan Francisco De BellocqSan GermanSan Jorge (Prov. Buenos Aires)San Manuel (Prov. Buenos Aires)San Miguel ArcangelSan NicolasSan Pedro (Prov. Buenos Aires)San RomanSan SebastianSansinenaSanta CelinaSanta Clara Del MarSanta EleodoraSanta Lucia (Prov. Buenos Aires)Santa Maria (Prov. Buenos Aires)Santa TeresitaSanto Domingo (Prov. Buenos Aires)Santo Tomas (Prov. Buenos AiresSan Vicente (Prov. Buenos Aires)SevigneSierra De La VentanaSierra De Los PadresSierras BayasSmithSolisSuipachaTandilTapalqueTeniente OrigoneTimoteToddTornquistTorresTortuguitasTrenque LauquenTres AlgarrobosTres ArroyosTres LomasTres SargentosTropezonUrdampilletaUribelarreaUrquizaValdesVazquezVediaVelaVeronicaVieytesVilla CaciqueVilla FortabatVilla GesellVilla IrisVilla LiaVillalongaVilla MazaVilla MollVillanuevaVilla RamalloVilla RosaVillarsVilla RuizVilla SauzeVilla VentanaVirrey Del PinoVivorataWarnesZarateZavaliaZelaya"}
-[0509/092715:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element {"using":"id","value":"city"}
-[0509/092718:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":{"ELEMENT":"0.6720860940404236:9"}}
-[0509/092718:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element/0.6720860940404236:9/name 
-[0509/092720:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":"select"}
-[0509/092720:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element {"using":"id","value":"city"}
-[0509/092723:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":{"ELEMENT":"0.6720860940404236:9"}}
-[0509/092723:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b/element/0.6720860940404236:9/attribute/multiple 
-[0509/092725:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":23,"value":{"message":"no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=26.0.1410.64)\n  (Driver info: chromedriver=0.8,platform=Windows NT 6.1 x86_64)"}}
-[0509/092725:INFO:chromedriver_server.cc(76)] Handling request: /session/ddb246c2aa5ba85c42a544edb42f890b 
-[0509/092726:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"ddb246c2aa5ba85c42a544edb42f890b","status":0,"value":null}
-[0509/092726:INFO:chromedriver_server.cc(76)] Handling request: /shutdown 
-[0509/092726:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"","status":0,"value":null}
+[0513/130550:INFO:chromedriver_server.cc(76)] Handling request: /status 
+[0513/130550:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"","status":0,"value":{"build":{"version":"alpha"},"os":{"arch":"x86_64","name":"Windows NT","version":"6.1 SP1"}}}
+[0513/130551:INFO:chromedriver_server.cc(76)] Handling request: /session {"desiredCapabilities":{"platform":"ANY","browserName":"chrome","chromeOptions":{"args":[],"extensions":[]},"version":"","chrome.switches":[]}}
+[0513/130551:INFO:chrome_launcher.cc(74)] Using chrome from C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[0513/130554:INFO:chromedriver_server.cc(81)] Done handling request: 303 
+[0513/130554:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca 
+[0513/130554:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"acceptSslCerts":true,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","cssSelectorsEnabled":true,"databaseEnabled":true,"driverVersion":"0.8","handlesAlerts":true,"javascriptEnabled":true,"locationContextEnabled":true,"nativeEvents":true,"platform":"Windows NT","rotatable":false,"takesScreenshot":true,"version":"26.0.1410.64","webStorageEnabled":true}}
+[0513/130554:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/timeouts/implicit_wait {"ms":60000}
+[0513/130554:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130554:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/url {"url":"http://stage.thinkglish.com/inicio.do"}
+[0513/130603:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130603:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"firstName"}
+[0513/130603:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:1"}}
+[0513/130603:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:1/clear {"id":"0.8093086478766054:1"}
+[0513/130603:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130603:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"lastName"}
+[0513/130603:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:2"}}
+[0513/130603:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:2/clear {"id":"0.8093086478766054:2"}
+[0513/130603:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130603:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"email"}
+[0513/130603:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:3"}}
+[0513/130603:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:3/clear {"id":"0.8093086478766054:3"}
+[0513/130603:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130603:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"firstName"}
+[0513/130603:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:1"}}
+[0513/130603:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:1/value {"id":"0.8093086478766054:1","value":["Test333238"]}
+[0513/130603:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130603:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"lastName"}
+[0513/130603:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:2"}}
+[0513/130603:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:2/value {"id":"0.8093086478766054:2","value":["User999"]}
+[0513/130603:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130603:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"email"}
+[0513/130603:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:3"}}
+[0513/130603:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:3/value {"id":"0.8093086478766054:3","value":["automation+333238@openenglish.com"]}
+[0513/130604:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130604:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"country"}
+[0513/130604:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:4"}}
+[0513/130604:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:4/name 
+[0513/130604:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"select"}
+[0513/130604:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"country"}
+[0513/130604:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:4"}}
+[0513/130604:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:4/attribute/multiple 
+[0513/130604:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130604:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"country"}
+[0513/130604:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:4"}}
+[0513/130604:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:4/elements {"id":"0.8093086478766054:4","using":"xpath","value":".//option[normalize-space(.) = \"Argentina\"]"}
+[0513/130604:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.8093086478766054:5"},{"ELEMENT":"0.8093086478766054:6"}]}
+[0513/130604:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:5/selected 
+[0513/130604:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":false}
+[0513/130604:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:5/click {"id":"0.8093086478766054:5"}
+[0513/130604:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130604:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"state"}
+[0513/130604:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:7"}}
+[0513/130604:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:7/text 
+[0513/130604:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":""}
+[0513/130604:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"state"}
+[0513/130604:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:7"}}
+[0513/130604:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:7/text 
+[0513/130605:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      \n     \n      Region of residenceBuenos AiresCatamarcaChacoChubutCordobaCorrientesEntre RiosFormosaJujuyLa PampaLa RiojaMendozaMisionesNeuquenRio NegroSaltaSan JuanSan LuisSanta CruzSanta FeSantiago Del EsteroTierra Del FuegoTucuman"}
+[0513/130605:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"state"}
+[0513/130605:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:7"}}
+[0513/130605:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:7/name 
+[0513/130605:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"select"}
+[0513/130605:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"state"}
+[0513/130605:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:7"}}
+[0513/130605:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:7/attribute/multiple 
+[0513/130605:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130605:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"state"}
+[0513/130605:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:7"}}
+[0513/130605:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:7/elements {"id":"0.8093086478766054:7","using":"xpath","value":".//option[normalize-space(.) = \"Buenos Aires\"]"}
+[0513/130605:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.8093086478766054:8"}]}
+[0513/130605:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:8/selected 
+[0513/130605:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":false}
+[0513/130605:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:8/click {"id":"0.8093086478766054:8"}
+[0513/130605:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130605:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"city"}
+[0513/130605:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:9"}}
+[0513/130605:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:9/text 
+[0513/130605:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"City"}
+[0513/130605:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"city"}
+[0513/130605:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:9"}}
+[0513/130605:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:9/text 
+[0513/130605:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"City"}
+[0513/130606:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"city"}
+[0513/130606:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:9"}}
+[0513/130606:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:9/text 
+[0513/130606:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"City12 De Octubre17 De Agosto25 De Mayo (Prov. Buenos Aires)30 De Agosto9 De Julio (Prov. Buenos Aires)AbastoAbbottAcevedoAdolfo Gonzalez ChavesAgustinaAgustin RocaAlbertiAlejandro KornAlejandro PetionAlgarroboAlsinaAltamirano (Prov. Buenos Aires)Alvarez De ToledoAmbaAmeghinoAmericaAntonio CarboniAparicioArboledasArenazaArgerichArrecifesArribe\u00F1osArroyo CortoArroyo DulceAscencionAtalayaAyacuchoAzcuenagaAzulBahia BlancaBaigorritaBajo HondoBalcarceBalneario Pehuen CoBanderaloBaraderoBarrio El CasalBarrio La ArmoniaBarrio Mi RinconBarrio Parque Pe\u00F1aBarrio Parque SicardiBarrio San EduardoBarrio San EstebanBartolome BavioBatanBayaucaBellocqBenavidezBenitezBenito JuarezBernasconiBeruttiBlaquierBolivarBonifacioBordenaveBragadoBrahmaCabildoCachariCadretCampanaCampos SallesCa\u00F1ada Seca (Prov. Buenos Aires)Ca\u00F1uelasCapilla Del Se\u00F1orCapital FederalCapitan SarmientoCarabelasCarhueCariloCarlos BeguerieCarlos CasaresCarlos KeenCarlos Maria NaonCarlos SalasCarlos SpegazziniCarlos TejedorCarmen De ArecoCasbasCastelliCastillaCazonChacabucoChascomusChasicoChiclanaChillarChivilcoyClarazClaromecoColonia BarraganColonia SereColon (Prov. Buenos Aires)Comandante N. OtamendiComodoro PyConesaCopetonasCoronel BrandsenCoronel CharloneCoronel DorregoCoronel GranadaCoronel MomCoronel PringlesCoronel SuarezCoronel VidalCucha CuchaCuculluCuraruDaireauxDarregueiraDe La GarmaDel CarrilDel VisoDennehyDerquiDique LujanDolores (Prov. Buenos Aires)DomselaarDrableDudignacDufaurDugganEl ArbolitoEl DiaEl DoradoEl FaroElordiEl ParaisoEl PatoEl PerdidoEl SocorroEl TriunfoElviraEmilio BungeErizeErnestinaEscobarEspartillarEspigasEstacion CametEstacion GomezEstacion Vi\u00F1aEsteban Agustin GasconFatimaFelipe SolaFerreFlandriaFontezuelaFortin OlavarriaFortin TiburcioFrancisco AlvarezFrancisco MaderoFrenchGahanGardeyGarinGarreGeneral Alvear (Prov. Buenos Aires)General ArenalesGeneral BelgranoGeneral Conesa (Prov. Buenos Aires)General GuidoGeneral LamadridGeneral Las HerasGeneral Lavalle (Prov. Buenos Aires)General MadariagaGeneral PintoGeneral PiranGeneral RivasGeneral RodriguezGeneral RojoGeneral San Martin (Prov. Buenos Aires)General VillegasGermaniaGlewGobernador CastroGobernador UgarteGonzalez CatanGorchsGorostiagaGoyenaGran Buenos AiresGrand BourgGuaminiGuanacoGuatracheGuernicaGuerricoHaleHendersonHilario AscasubiHinojoHuanguelen SurIndio RicoInes IndartIngeniero MaschwitzIngeniero ThomsonIng. Romulo OtamendiIralaIreneo PortelaIriarteIsla Martin GarciaJacinto ArauzJeppenerJose C. PazJose FerrariJuan A. PradereJuan B. AlberdiJuan De La Pe\u00F1aJuan E.BarraJuan Jose PasoJuan Maria GutierrezJuan N. FernandezJuncalJunin (Prov. Buenos Aires)La AngelitaLabardenLa Brava (Prov. Buenos Aires)La CapillaLa ColinaLa DulceLa LonjaLa Ni\u00F1aLa PlataLa PosadaLapridaLa RicaLas ArmasLas Dos MariasLas Flores (Prov. Buenos Aires)Las MarianasLas MartinetasLas PiedritasLas Toscas (Prov. Buenos Aires)La VioletaLeandro N. Alem (Prov. Buenos Aires)LezamaLibanoLibertadLimaLincolnLisandro OlmosLoberiaLobosLoma VerdeLopez CameloLos CardalesLos OrtizLos PinosLos Toldos (Prov. Buenos Aires)Lujan (Prov. Buenos Aires)MagdalaMagdalenaMaipu (Prov. Buenos Aires)Manuel OcampoMaquinista SavioMar ChiquitaMarcos PazMar De AjoMar Del PlataMar Del SurMariano AcostaMariano BenitezMartinez De HozMatheuMauricio HirschMayor BuratovichMechitaMechongueMedanos (Prov. Buenos Aires)Mercedes (Prov. Buenos Aires)Merlo (Prov. Buenos Aires)M. H. AlfonzoMicaela CascallaresMiramar (Prov. Buenos Aires)MoctezumaMones CazonMonteMonte HermosoMoquehuaMoreaMorenoMorseMosconiNapaleofuNavarroNecocheaNorberto De La RiestraNorumbegaNueva PlataNueva RomaO' BrienO\u00B4HigginsOlavarriaOlidenOliveraOpen DoorOrenseOrientePalemon HuergoParada RoblesParaje El TaladroParaje Sauce ChicoParque Industrial PilarPasteurPatriciosPearsonPedernalesPedro LuroPehuajoPellegriniPerez MillanPergaminoPiedritas (Prov. Buenos Aires)PieresPig\u00FCePilaPilar (Prov. Buenos Aires)PinamarPinzonPipinasPirovanoPlaPlaya ChapadmalalPlommerPobletPolvaredas (Prov. Buenos Aires)PontevedraPuanPueblo Del VallePuerto BelgranoPunta AltaPunta IndioQuenumaQuirogaRafael ObligadoRamalloRamon BiausRamon SantamarinaRancaguaRanchosRauchRawson (Prov. Buenos Aires)RecaldeRetaRio TalaRiveraRobertsRojasRooseveltRoque PerezSaavedraSaforcadaSaladillo (Prov. Buenos Aires)SalazarSaldungaraySalliqueloSaltoSalvador MariaSan Agustin (Prov. Buenos Aires)San Andres De GilesSan Antonio De ArecoSan Bernardo (Prov. Buenos Aires)San CayetanoSan Clemente Del TuyuSan Eduardo Del MarSan EnriqueSan Francisco De BellocqSan GermanSan Jorge (Prov. Buenos Aires)San Manuel (Prov. Buenos Aires)San Miguel ArcangelSan NicolasSan Pedro (Prov. Buenos Aires)San RomanSan SebastianSansinenaSanta CelinaSanta Clara Del MarSanta EleodoraSanta Lucia (Prov. Buenos Aires)Santa Maria (Prov. Buenos Aires)Santa TeresitaSanto Domingo (Prov. Buenos Aires)Santo Tomas (Prov. Buenos AiresSan Vicente (Prov. Buenos Aires)SevigneSierra De La VentanaSierra De Los PadresSierras BayasSmithSolisSuipachaTandilTapalqueTeniente OrigoneTimoteToddTornquistTorresTortuguitasTrenque LauquenTres AlgarrobosTres ArroyosTres LomasTres SargentosTropezonUrdampilletaUribelarreaUrquizaValdesVazquezVediaVelaVeronicaVieytesVilla CaciqueVilla FortabatVilla GesellVilla IrisVilla LiaVillalongaVilla MazaVilla MollVillanuevaVilla RamalloVilla RosaVillarsVilla RuizVilla SauzeVilla VentanaVirrey Del PinoVivorataWarnesZarateZavaliaZelaya"}
+[0513/130606:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"city"}
+[0513/130606:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:9"}}
+[0513/130606:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:9/name 
+[0513/130606:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"select"}
+[0513/130606:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"city"}
+[0513/130606:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:9"}}
+[0513/130606:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:9/attribute/multiple 
+[0513/130606:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130606:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"city"}
+[0513/130606:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:9"}}
+[0513/130606:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:9/elements {"id":"0.8093086478766054:9","using":"xpath","value":".//option[normalize-space(.) = \"Amba\"]"}
+[0513/130606:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.8093086478766054:10"}]}
+[0513/130606:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:10/selected 
+[0513/130606:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":false}
+[0513/130606:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:10/click {"id":"0.8093086478766054:10"}
+[0513/130606:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130606:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"phoneType1Cell"}
+[0513/130606:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:11"}}
+[0513/130606:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:11/click {"id":"0.8093086478766054:11"}
+[0513/130606:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130606:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"phoneNumber11"}
+[0513/130606:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:12"}}
+[0513/130606:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:12/value {"id":"0.8093086478766054:12","value":["1234"]}
+[0513/130606:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130606:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"phoneNumber12"}
+[0513/130606:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:13"}}
+[0513/130606:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:13/value {"id":"0.8093086478766054:13","value":["5678"]}
+[0513/130607:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130607:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"media"}
+[0513/130607:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:14"}}
+[0513/130607:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:14/name 
+[0513/130607:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"select"}
+[0513/130607:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"media"}
+[0513/130607:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:14"}}
+[0513/130607:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:14/attribute/multiple 
+[0513/130607:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130607:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"media"}
+[0513/130607:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:14"}}
+[0513/130607:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:14/elements {"id":"0.8093086478766054:14","using":"xpath","value":".//option[normalize-space(.) = \"Radio\"]"}
+[0513/130607:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.8093086478766054:15"}]}
+[0513/130607:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:15/selected 
+[0513/130607:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":false}
+[0513/130607:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:15/click {"id":"0.8093086478766054:15"}
+[0513/130607:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130607:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"age"}
+[0513/130607:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:16"}}
+[0513/130607:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:16/name 
+[0513/130607:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"select"}
+[0513/130607:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"age"}
+[0513/130607:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:16"}}
+[0513/130607:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:16/attribute/multiple 
+[0513/130607:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130607:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"age"}
+[0513/130607:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:16"}}
+[0513/130607:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:16/elements {"id":"0.8093086478766054:16","using":"xpath","value":".//option[normalize-space(.) = \"19-25 years old\"]"}
+[0513/130607:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.8093086478766054:17"}]}
+[0513/130607:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:17/selected 
+[0513/130607:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":false}
+[0513/130607:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:17/click {"id":"0.8093086478766054:17"}
+[0513/130607:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130607:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"sendButton"}
+[0513/130607:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8093086478766054:18"}}
+[0513/130607:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8093086478766054:18/click {"id":"0.8093086478766054:18"}
+[0513/130622:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130622:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/url {"url":"https://test.salesforce.com/"}
+[0513/130629:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130629:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"username"}
+[0513/130629:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.739440510282293:1"}}
+[0513/130629:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.739440510282293:1/value {"id":"0.739440510282293:1","value":["fnc@openenglish.com.oetest0"]}
+[0513/130629:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130629:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"password"}
+[0513/130629:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.739440510282293:2"}}
+[0513/130629:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.739440510282293:2/value {"id":"0.739440510282293:2","value":["finance0"]}
+[0513/130629:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130629:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"Login"}
+[0513/130629:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.739440510282293:3"}}
+[0513/130629:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.739440510282293:3/click {"id":"0.739440510282293:3"}
+[0513/130649:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130649:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"Lead_Tab"}
+[0513/130649:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.343124182196334:1"}}
+[0513/130649:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.343124182196334:1/click {"id":"0.343124182196334:1"}
+[0513/130651:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130651:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/elements {"using":"xpath","value":"//span[@class='dateFormat']/a"}
+[0513/130651:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.8367033791728318:1"},{"ELEMENT":"0.8367033791728318:2"}]}
+[0513/130651:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8367033791728318:1/click {"id":"0.8367033791728318:1"}
+[0513/130651:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130651:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8367033791728318:2/click {"id":"0.8367033791728318:2"}
+[0513/130651:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130651:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"scope"}
+[0513/130651:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8367033791728318:3"}}
+[0513/130651:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8367033791728318:3/name 
+[0513/130651:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"select"}
+[0513/130651:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"scope"}
+[0513/130651:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8367033791728318:3"}}
+[0513/130651:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8367033791728318:3/attribute/multiple 
+[0513/130651:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130651:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"scope"}
+[0513/130651:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8367033791728318:3"}}
+[0513/130651:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8367033791728318:3/elements {"id":"0.8367033791728318:3","using":"xpath","value":".//option[normalize-space(.) = \"All leads\"]"}
+[0513/130651:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.8367033791728318:4"}]}
+[0513/130651:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8367033791728318:4/selected 
+[0513/130651:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":false}
+[0513/130651:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8367033791728318:4/click {"id":"0.8367033791728318:4"}
+[0513/130651:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130651:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"xpath","value":"//input[@value='Run Report']"}
+[0513/130651:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8367033791728318:5"}}
+[0513/130651:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8367033791728318:5/click {"id":"0.8367033791728318:5"}
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"class name","value":"reportTable"}
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.9402200162876397:1"}}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:1/elements {"id":"0.9402200162876397:1","using":"tag name","value":"tr"}
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.9402200162876397:2"},{"ELEMENT":"0.9402200162876397:3"},{"ELEMENT":"0.9402200162876397:4"},{"ELEMENT":"0.9402200162876397:5"},{"ELEMENT":"0.9402200162876397:6"},{"ELEMENT":"0.9402200162876397:7"},{"ELEMENT":"0.9402200162876397:8"},{"ELEMENT":"0.9402200162876397:9"},{"ELEMENT":"0.9402200162876397:10"},{"ELEMENT":"0.9402200162876397:11"},{"ELEMENT":"0.9402200162876397:12"},{"ELEMENT":"0.9402200162876397:13"},{"ELEMENT":"0.9402200162876397:14"},{"ELEMENT":"0.9402200162876397:15"},{"ELEMENT":"0.9402200162876397:16"},{"ELEMENT":"0.9402200162876397:17"},{"ELEMENT":"0.9402200162876397:18"},{"ELEMENT":"0.9402200162876397:19"},{"ELEMENT":"0.9402200162876397:20"},{"ELEMENT":"0.9402200162876397:21"},{"ELEMENT":"0.9402200162876397:22"},{"ELEMENT":"0.9402200162876397:23"}]}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:3/elements {"id":"0.9402200162876397:3","using":"tag name","value":"td"}
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.9402200162876397:24"},{"ELEMENT":"0.9402200162876397:25"},{"ELEMENT":"0.9402200162876397:26"},{"ELEMENT":"0.9402200162876397:27"},{"ELEMENT":"0.9402200162876397:28"},{"ELEMENT":"0.9402200162876397:29"},{"ELEMENT":"0.9402200162876397:30"},{"ELEMENT":"0.9402200162876397:31"}]}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:24/text 
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"Test354091712"}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:4/elements {"id":"0.9402200162876397:4","using":"tag name","value":"td"}
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.9402200162876397:32"},{"ELEMENT":"0.9402200162876397:33"},{"ELEMENT":"0.9402200162876397:34"},{"ELEMENT":"0.9402200162876397:35"},{"ELEMENT":"0.9402200162876397:36"},{"ELEMENT":"0.9402200162876397:37"},{"ELEMENT":"0.9402200162876397:38"},{"ELEMENT":"0.9402200162876397:39"}]}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:32/text 
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"Test987"}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:5/elements {"id":"0.9402200162876397:5","using":"tag name","value":"td"}
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.9402200162876397:40"},{"ELEMENT":"0.9402200162876397:41"},{"ELEMENT":"0.9402200162876397:42"},{"ELEMENT":"0.9402200162876397:43"},{"ELEMENT":"0.9402200162876397:44"},{"ELEMENT":"0.9402200162876397:45"},{"ELEMENT":"0.9402200162876397:46"},{"ELEMENT":"0.9402200162876397:47"}]}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:40/text 
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"Test987199"}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:6/elements {"id":"0.9402200162876397:6","using":"tag name","value":"td"}
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.9402200162876397:48"},{"ELEMENT":"0.9402200162876397:49"},{"ELEMENT":"0.9402200162876397:50"},{"ELEMENT":"0.9402200162876397:51"},{"ELEMENT":"0.9402200162876397:52"},{"ELEMENT":"0.9402200162876397:53"},{"ELEMENT":"0.9402200162876397:54"},{"ELEMENT":"0.9402200162876397:55"}]}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:48/text 
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"Test987555"}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:7/elements {"id":"0.9402200162876397:7","using":"tag name","value":"td"}
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.9402200162876397:56"},{"ELEMENT":"0.9402200162876397:57"},{"ELEMENT":"0.9402200162876397:58"},{"ELEMENT":"0.9402200162876397:59"},{"ELEMENT":"0.9402200162876397:60"},{"ELEMENT":"0.9402200162876397:61"},{"ELEMENT":"0.9402200162876397:62"},{"ELEMENT":"0.9402200162876397:63"}]}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:56/text 
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"TEst98888"}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:8/elements {"id":"0.9402200162876397:8","using":"tag name","value":"td"}
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.9402200162876397:64"},{"ELEMENT":"0.9402200162876397:65"},{"ELEMENT":"0.9402200162876397:66"},{"ELEMENT":"0.9402200162876397:67"},{"ELEMENT":"0.9402200162876397:68"},{"ELEMENT":"0.9402200162876397:69"},{"ELEMENT":"0.9402200162876397:70"},{"ELEMENT":"0.9402200162876397:71"}]}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:64/text 
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"Test123"}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:9/elements {"id":"0.9402200162876397:9","using":"tag name","value":"td"}
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.9402200162876397:72"},{"ELEMENT":"0.9402200162876397:73"},{"ELEMENT":"0.9402200162876397:74"},{"ELEMENT":"0.9402200162876397:75"},{"ELEMENT":"0.9402200162876397:76"},{"ELEMENT":"0.9402200162876397:77"},{"ELEMENT":"0.9402200162876397:78"},{"ELEMENT":"0.9402200162876397:79"}]}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:72/text 
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"ops"}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:10/elements {"id":"0.9402200162876397:10","using":"tag name","value":"td"}
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.9402200162876397:80"},{"ELEMENT":"0.9402200162876397:81"},{"ELEMENT":"0.9402200162876397:82"},{"ELEMENT":"0.9402200162876397:83"},{"ELEMENT":"0.9402200162876397:84"},{"ELEMENT":"0.9402200162876397:85"},{"ELEMENT":"0.9402200162876397:86"},{"ELEMENT":"0.9402200162876397:87"}]}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:80/text 
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"Test124"}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:11/elements {"id":"0.9402200162876397:11","using":"tag name","value":"td"}
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.9402200162876397:88"},{"ELEMENT":"0.9402200162876397:89"},{"ELEMENT":"0.9402200162876397:90"},{"ELEMENT":"0.9402200162876397:91"},{"ELEMENT":"0.9402200162876397:92"},{"ELEMENT":"0.9402200162876397:93"},{"ELEMENT":"0.9402200162876397:94"},{"ELEMENT":"0.9402200162876397:95"}]}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:88/text 
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"Test3232"}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:12/elements {"id":"0.9402200162876397:12","using":"tag name","value":"td"}
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.9402200162876397:96"},{"ELEMENT":"0.9402200162876397:97"},{"ELEMENT":"0.9402200162876397:98"},{"ELEMENT":"0.9402200162876397:99"},{"ELEMENT":"0.9402200162876397:100"},{"ELEMENT":"0.9402200162876397:101"},{"ELEMENT":"0.9402200162876397:102"},{"ELEMENT":"0.9402200162876397:103"}]}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:96/text 
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"Test323299"}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:13/elements {"id":"0.9402200162876397:13","using":"tag name","value":"td"}
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.9402200162876397:104"},{"ELEMENT":"0.9402200162876397:105"},{"ELEMENT":"0.9402200162876397:106"},{"ELEMENT":"0.9402200162876397:107"},{"ELEMENT":"0.9402200162876397:108"},{"ELEMENT":"0.9402200162876397:109"},{"ELEMENT":"0.9402200162876397:110"},{"ELEMENT":"0.9402200162876397:111"}]}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:104/text 
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"test"}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:14/elements {"id":"0.9402200162876397:14","using":"tag name","value":"td"}
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.9402200162876397:112"},{"ELEMENT":"0.9402200162876397:113"},{"ELEMENT":"0.9402200162876397:114"},{"ELEMENT":"0.9402200162876397:115"},{"ELEMENT":"0.9402200162876397:116"},{"ELEMENT":"0.9402200162876397:117"},{"ELEMENT":"0.9402200162876397:118"},{"ELEMENT":"0.9402200162876397:119"}]}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:112/text 
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"Test4123"}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:15/elements {"id":"0.9402200162876397:15","using":"tag name","value":"td"}
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.9402200162876397:120"},{"ELEMENT":"0.9402200162876397:121"},{"ELEMENT":"0.9402200162876397:122"},{"ELEMENT":"0.9402200162876397:123"},{"ELEMENT":"0.9402200162876397:124"},{"ELEMENT":"0.9402200162876397:125"},{"ELEMENT":"0.9402200162876397:126"},{"ELEMENT":"0.9402200162876397:127"}]}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:120/text 
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"Test666"}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:16/elements {"id":"0.9402200162876397:16","using":"tag name","value":"td"}
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.9402200162876397:128"},{"ELEMENT":"0.9402200162876397:129"},{"ELEMENT":"0.9402200162876397:130"},{"ELEMENT":"0.9402200162876397:131"},{"ELEMENT":"0.9402200162876397:132"},{"ELEMENT":"0.9402200162876397:133"},{"ELEMENT":"0.9402200162876397:134"},{"ELEMENT":"0.9402200162876397:135"}]}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:128/text 
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"Test6667"}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:17/elements {"id":"0.9402200162876397:17","using":"tag name","value":"td"}
+[0513/130655:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.9402200162876397:136"},{"ELEMENT":"0.9402200162876397:137"},{"ELEMENT":"0.9402200162876397:138"},{"ELEMENT":"0.9402200162876397:139"},{"ELEMENT":"0.9402200162876397:140"},{"ELEMENT":"0.9402200162876397:141"},{"ELEMENT":"0.9402200162876397:142"},{"ELEMENT":"0.9402200162876397:143"}]}
+[0513/130655:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:136/text 
+[0513/130656:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"Test666711"}
+[0513/130656:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:18/elements {"id":"0.9402200162876397:18","using":"tag name","value":"td"}
+[0513/130656:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.9402200162876397:144"},{"ELEMENT":"0.9402200162876397:145"},{"ELEMENT":"0.9402200162876397:146"},{"ELEMENT":"0.9402200162876397:147"},{"ELEMENT":"0.9402200162876397:148"},{"ELEMENT":"0.9402200162876397:149"},{"ELEMENT":"0.9402200162876397:150"},{"ELEMENT":"0.9402200162876397:151"}]}
+[0513/130656:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:144/text 
+[0513/130656:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"Test6631"}
+[0513/130656:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:19/elements {"id":"0.9402200162876397:19","using":"tag name","value":"td"}
+[0513/130656:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.9402200162876397:152"},{"ELEMENT":"0.9402200162876397:153"},{"ELEMENT":"0.9402200162876397:154"},{"ELEMENT":"0.9402200162876397:155"},{"ELEMENT":"0.9402200162876397:156"},{"ELEMENT":"0.9402200162876397:157"},{"ELEMENT":"0.9402200162876397:158"},{"ELEMENT":"0.9402200162876397:159"}]}
+[0513/130656:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:152/text 
+[0513/130656:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"Test666711999"}
+[0513/130656:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:20/elements {"id":"0.9402200162876397:20","using":"tag name","value":"td"}
+[0513/130656:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.9402200162876397:160"},{"ELEMENT":"0.9402200162876397:161"},{"ELEMENT":"0.9402200162876397:162"},{"ELEMENT":"0.9402200162876397:163"},{"ELEMENT":"0.9402200162876397:164"},{"ELEMENT":"0.9402200162876397:165"},{"ELEMENT":"0.9402200162876397:166"},{"ELEMENT":"0.9402200162876397:167"}]}
+[0513/130656:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:160/text 
+[0513/130656:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"Test3338"}
+[0513/130656:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:21/elements {"id":"0.9402200162876397:21","using":"tag name","value":"td"}
+[0513/130656:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.9402200162876397:168"},{"ELEMENT":"0.9402200162876397:169"},{"ELEMENT":"0.9402200162876397:170"},{"ELEMENT":"0.9402200162876397:171"},{"ELEMENT":"0.9402200162876397:172"},{"ELEMENT":"0.9402200162876397:173"},{"ELEMENT":"0.9402200162876397:174"},{"ELEMENT":"0.9402200162876397:175"}]}
+[0513/130656:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:168/text 
+[0513/130656:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"Test33328"}
+[0513/130656:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:22/elements {"id":"0.9402200162876397:22","using":"tag name","value":"td"}
+[0513/130656:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.9402200162876397:176"},{"ELEMENT":"0.9402200162876397:177"},{"ELEMENT":"0.9402200162876397:178"},{"ELEMENT":"0.9402200162876397:179"},{"ELEMENT":"0.9402200162876397:180"},{"ELEMENT":"0.9402200162876397:181"},{"ELEMENT":"0.9402200162876397:182"},{"ELEMENT":"0.9402200162876397:183"}]}
+[0513/130656:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:176/text 
+[0513/130656:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"Test333238"}
+[0513/130656:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:177/text 
+[0513/130656:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"User999"}
+[0513/130656:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:180/text 
+[0513/130656:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"automation+333238@openenglish.com"}
+[0513/130656:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:176/element {"id":"0.9402200162876397:176","using":"tag name","value":"a"}
+[0513/130656:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.9402200162876397:184"}}
+[0513/130656:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.9402200162876397:184/click {"id":"0.9402200162876397:184"}
+[0513/130709:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130709:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"name","value":"convert"}
+[0513/130709:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.030250515090301633:1"}}
+[0513/130709:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.030250515090301633:1/click {"id":"0.030250515090301633:1"}
+[0513/130713:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130713:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"name","value":"save"}
+[0513/130713:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.22615255462005734:1"}}
+[0513/130713:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.22615255462005734:1/click {"id":"0.22615255462005734:1"}
+[0513/130717:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130717:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"xpath","value":"//div[@class='listRelatedObject opportunityBlock']/div/div[@class='pbBody']/table/tbody/tr/th[@scope='row']/a"}
+[0513/130718:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8840816698502749:1"}}
+[0513/130718:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8840816698502749:1/click {"id":"0.8840816698502749:1"}
+[0513/130719:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130719:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"xpath","value":"//*[@id='bottomButtonRow']/input[7]"}
+[0513/130719:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.16712919692508876:1"}}
+[0513/130719:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.16712919692508876:1/click {"id":"0.16712919692508876:1"}
+[0513/130735:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130735:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"j_id0:j_id1:j_id28:accountsection:accTypeRadio:0"}
+[0513/130735:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.3378042131662369:1"}}
+[0513/130735:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.3378042131662369:1/click {"id":"0.3378042131662369:1"}
+[0513/130735:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130735:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"name","value":"j_id0:j_id1:j_id28:j_id45:j_id46"}
+[0513/130735:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.3378042131662369:2"}}
+[0513/130735:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.3378042131662369:2/click {"id":"0.3378042131662369:2"}
+[0513/130737:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130737:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"asdf:quoteForm:quoteblock:SubscriptionTermsBlock:paymentMethod"}
+[0513/130737:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8181365951895714:1"}}
+[0513/130737:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8181365951895714:1/name 
+[0513/130737:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"select"}
+[0513/130737:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"asdf:quoteForm:quoteblock:SubscriptionTermsBlock:paymentMethod"}
+[0513/130737:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8181365951895714:1"}}
+[0513/130737:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8181365951895714:1/attribute/multiple 
+[0513/130737:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130737:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"asdf:quoteForm:quoteblock:SubscriptionTermsBlock:paymentMethod"}
+[0513/130737:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8181365951895714:1"}}
+[0513/130737:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8181365951895714:1/elements {"id":"0.8181365951895714:1","using":"xpath","value":".//option[normalize-space(.) = \"Credit Card\"]"}
+[0513/130737:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.8181365951895714:2"}]}
+[0513/130737:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8181365951895714:2/selected 
+[0513/130737:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":false}
+[0513/130737:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8181365951895714:2/click {"id":"0.8181365951895714:2"}
+[0513/130737:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130737:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"asdf:quoteForm:quoteblock:SubscriptionTermsBlock:billingTerm"}
+[0513/130737:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8181365951895714:3"}}
+[0513/130737:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8181365951895714:3/name 
+[0513/130737:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"select"}
+[0513/130737:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"asdf:quoteForm:quoteblock:SubscriptionTermsBlock:billingTerm"}
+[0513/130737:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8181365951895714:3"}}
+[0513/130737:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8181365951895714:3/attribute/multiple 
+[0513/130738:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130738:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"asdf:quoteForm:quoteblock:SubscriptionTermsBlock:billingTerm"}
+[0513/130738:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8181365951895714:3"}}
+[0513/130738:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8181365951895714:3/elements {"id":"0.8181365951895714:3","using":"xpath","value":".//option[normalize-space(.) = \"1 Year\"]"}
+[0513/130738:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.8181365951895714:4"}]}
+[0513/130738:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8181365951895714:4/selected 
+[0513/130738:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":false}
+[0513/130738:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8181365951895714:4/click {"id":"0.8181365951895714:4"}
+[0513/130738:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130738:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"xpath","value":"//td[@id='asdf:quoteForm:quoteblock:j_id26:bottom']/input[@id='asdf:quoteForm:quoteblock:j_id26:bottom:j_id27']"}
+[0513/130738:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.8181365951895714:5"}}
+[0513/130738:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.8181365951895714:5/click {"id":"0.8181365951895714:5"}
+[0513/130738:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130738:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"xpath","value":"//td[@id='topButtonRow']/input[@value='Select / View Products']"}
+[0513/130741:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.6058325110934675:1"}}
+[0513/130741:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.6058325110934675:1/click {"id":"0.6058325110934675:1"}
+[0513/130746:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130746:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"quoting_page:quoting_form:quoting_page_block:j_id28:searchField"}
+[0513/130746:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.3589522067923099:1"}}
+[0513/130746:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.3589522067923099:1/value {"id":"0.3589522067923099:1","value":["Regular Course"]}
+[0513/130746:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130746:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"quoting_page:quoting_form:quoting_page_block:j_id28:btnSearchProducts"}
+[0513/130746:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.3589522067923099:2"}}
+[0513/130746:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.3589522067923099:2/click {"id":"0.3589522067923099:2"}
+[0513/130746:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130746:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/timeouts/implicit_wait {"ms":10000}
+[0513/130746:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130746:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/elements {"using":"xpath","value":"//div[@class='Custom5Block']/div[@id='quoting_page:quoting_form:quoting_page_block:j_id28:product_zselect_table:j_id34:listtable_pageblock']/div/span/table[@class='list']/tbody/tr/td/span/span/span/img[@src='/resource/1356042819000/zqu__radioBtnUnChk']"}
+[0513/130747:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.3589522067923099:3"},{"ELEMENT":"0.3589522067923099:4"}]}
+[0513/130747:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.3589522067923099:3/click {"id":"0.3589522067923099:3"}
+[0513/130748:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130748:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/timeouts/implicit_wait {"ms":10000}
+[0513/130748:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130748:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/elements {"using":"xpath","value":"//div[@class='Custom5Block']/div[@id='quoting_page:quoting_form:quoting_page_block:j_id28:rateplan_zselect_table:j_id54:listtable_pageblock']/div/span/table[@class='list']/tbody/tr/td/span/span/span/img[@src='/resource/1356042819000/zqu__radioBtnUnChk']"}
+[0513/130749:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.3589522067923099:5"},{"ELEMENT":"0.3589522067923099:6"},{"ELEMENT":"0.3589522067923099:7"},{"ELEMENT":"0.3589522067923099:8"},{"ELEMENT":"0.3589522067923099:9"},{"ELEMENT":"0.3589522067923099:10"},{"ELEMENT":"0.3589522067923099:11"},{"ELEMENT":"0.3589522067923099:12"},{"ELEMENT":"0.3589522067923099:13"}]}
+[0513/130749:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.3589522067923099:5/click {"id":"0.3589522067923099:5"}
+[0513/130749:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130749:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"xpath","value":"//input[@value='Save']"}
+[0513/130753:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.3589522067923099:14"}}
+[0513/130753:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.3589522067923099:14/click {"id":"0.3589522067923099:14"}
+[0513/130801:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130801:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"xpath","value":"//a[.='Send to Z-Billing']"}
+[0513/130822:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.5930395235773176:1"}}
+[0513/130822:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.5930395235773176:1/click {"id":"0.5930395235773176:1"}
+[0513/130828:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130828:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"page:previewform:subscriptionblock:j_id323:j_id326"}
+[0513/130828:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.1954329377040267:1"}}
+[0513/130828:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.1954329377040267:1/click {"id":"0.1954329377040267:1"}
+[0513/130828:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130828:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"xpath","value":"//input[@value='Done']"}
+[0513/130835:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.1954329377040267:2"}}
+[0513/130835:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.1954329377040267:2/displayed 
+[0513/130835:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":true}
+[0513/130835:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.1954329377040267:2/enabled 
+[0513/130835:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":true}
+[0513/130835:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"xpath","value":"//input[@value='Done']"}
+[0513/130835:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.1954329377040267:2"}}
+[0513/130835:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.1954329377040267:2/click {"id":"0.1954329377040267:2"}
+[0513/130842:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130842:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"link text","value":"Store URL"}
+[0513/130842:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.22394681605510414:1"}}
+[0513/130842:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.22394681605510414:1/attribute/href 
+[0513/130842:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"https://store.thinkglish.com/pay?subscriptionId=2c92c0f83e901d6f013e9ea6873e5e6d"}
+[0513/130842:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/url {"url":"https://store.thinkglish.com/pay?subscriptionId=2c92c0f83e901d6f013e9ea6873e5e6d"}
+[0513/130850:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130850:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"account.billTo.documentNumber"}
+[0513/130850:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.08204407221637666:1"}}
+[0513/130850:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.08204407221637666:1/value {"id":"0.08204407221637666:1","value":["111111111"]}
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"paymentMethodSelector"}
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.08204407221637666:2"}}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.08204407221637666:2/name 
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"select"}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"paymentMethodSelector"}
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.08204407221637666:2"}}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.08204407221637666:2/attribute/multiple 
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"paymentMethodSelector"}
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.08204407221637666:2"}}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.08204407221637666:2/elements {"id":"0.08204407221637666:2","using":"xpath","value":".//option[normalize-space(.) = \"Visa\"]"}
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.08204407221637666:3"}]}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.08204407221637666:3/selected 
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":false}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.08204407221637666:3/click {"id":"0.08204407221637666:3"}
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"paymentMethodViewModel.paymentInfo.cardNumber"}
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.08204407221637666:4"}}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.08204407221637666:4/value {"id":"0.08204407221637666:4","value":["4012888888881881"]}
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"expiryMonth"}
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.08204407221637666:5"}}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.08204407221637666:5/name 
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"select"}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"expiryMonth"}
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.08204407221637666:5"}}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.08204407221637666:5/attribute/multiple 
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"expiryMonth"}
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.08204407221637666:5"}}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.08204407221637666:5/elements {"id":"0.08204407221637666:5","using":"xpath","value":".//option[normalize-space(.) = \"10\"]"}
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.08204407221637666:6"}]}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.08204407221637666:6/selected 
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":false}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.08204407221637666:6/click {"id":"0.08204407221637666:6"}
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"expiryYear"}
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.08204407221637666:7"}}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.08204407221637666:7/name 
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":"select"}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"expiryYear"}
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.08204407221637666:7"}}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.08204407221637666:7/attribute/multiple 
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"expiryYear"}
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.08204407221637666:7"}}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.08204407221637666:7/elements {"id":"0.08204407221637666:7","using":"xpath","value":".//option[normalize-space(.) = \"15\"]"}
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":[{"ELEMENT":"0.08204407221637666:8"}]}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.08204407221637666:8/selected 
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":false}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.08204407221637666:8/click {"id":"0.08204407221637666:8"}
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"paymentMethodViewModel.paymentInfo.cardHolderName"}
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.08204407221637666:9"}}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.08204407221637666:9/clear {"id":"0.08204407221637666:9"}
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"paymentMethodViewModel.paymentInfo.cardHolderName"}
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.08204407221637666:9"}}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.08204407221637666:9/value {"id":"0.08204407221637666:9","value":["Test333238User999"]}
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"paymentMethodViewModel.paymentInfo.securityCode"}
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.08204407221637666:10"}}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.08204407221637666:10/value {"id":"0.08204407221637666:10","value":["123"]}
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"contracts[0].signature"}
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.08204407221637666:11"}}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.08204407221637666:11/value {"id":"0.08204407221637666:11","value":["Test333238User999"]}
+[0513/130851:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130851:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"contracts0.hasAcceptedTerms1"}
+[0513/130852:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.08204407221637666:12"}}
+[0513/130852:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.08204407221637666:12/click {"id":"0.08204407221637666:12"}
+[0513/130852:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130852:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"contracts0.hasAcceptedMoneyBackGuaranteeUpfront1"}
+[0513/130852:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.08204407221637666:13"}}
+[0513/130852:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.08204407221637666:13/click {"id":"0.08204407221637666:13"}
+[0513/130852:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130852:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"contracts0.hasAcceptedNoRefundsUpfront1"}
+[0513/130852:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.08204407221637666:14"}}
+[0513/130852:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.08204407221637666:14/click {"id":"0.08204407221637666:14"}
+[0513/130852:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130852:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element {"using":"id","value":"confirm"}
+[0513/130852:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":{"ELEMENT":"0.08204407221637666:15"}}
+[0513/130852:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca/element/0.08204407221637666:15/click {"id":"0.08204407221637666:15"}
+[0513/130859:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130909:INFO:chromedriver_server.cc(76)] Handling request: /session/dae9dfb358a4c64cb45ff8e182d0e6ca 
+[0513/130909:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"dae9dfb358a4c64cb45ff8e182d0e6ca","status":0,"value":null}
+[0513/130909:INFO:chromedriver_server.cc(76)] Handling request: /shutdown 
+[0513/130909:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"","status":0,"value":null}

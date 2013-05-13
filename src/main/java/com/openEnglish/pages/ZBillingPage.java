@@ -27,7 +27,7 @@ public class ZBillingPage {
 		
 		sendToZuora.click();
 		
-		(new WebDriverWait(driver, 30))
+		(new WebDriverWait(driver, 50))
 		  .until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Done']")));
 		doneButton.click();
 		
