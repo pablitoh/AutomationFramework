@@ -18,6 +18,9 @@ public class IndividualAccountPage {
 	@FindBy(xpath="//a[@id='bt_basic_edit']/span")
 	private WebElement editButton;
 	
+	@FindBy(xpath="//table[@id='subsciptions']/tbody/tr/td/div/a[contains(.,'OE')]")
+	private WebElement subscription;
+	
 	public EditIndividualAccountPage EditAccount() {
 		
 		editButton.click();
@@ -25,8 +28,7 @@ public class IndividualAccountPage {
 		return new EditIndividualAccountPage(driver);
 	}
 	
-	@FindBy(xpath="//table[@id='subsciptions']/tbody/tr/td/div/a[contains(.,'OE')]")
-	private WebElement subscription;
+
 	
 	public OESubscriptionPage GoToOESubscription() {
 		

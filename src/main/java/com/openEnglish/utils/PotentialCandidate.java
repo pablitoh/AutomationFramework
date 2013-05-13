@@ -14,5 +14,5 @@ public class PotentialCandidate {
 	private String tel2;
 	private String media;
 	private String age;
-
+ 
 }

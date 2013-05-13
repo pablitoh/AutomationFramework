@@ -20,6 +20,8 @@ public class EditIndividualAccountPage {
 	private WebElement notes;
 	@FindBy(id="customFieldsData.cf1Data")
 	private WebElement customProcessorSelect;
+	@FindBy(id="netSuiteIntegrationData.synctoNetSuite")
+	private WebElement netSuiteSelect;
 	@FindBy(xpath="//a[@id='save_basicInfo']/span")
 	private WebElement saveButton;
 	
@@ -30,8 +32,9 @@ public class EditIndividualAccountPage {
 		Select customProcessor = new Select(customProcessorSelect);
 		customProcessor.selectByVisibleText("No");
 		
-		//SYNC TO NETSUIT - NO
-		
+		Select netSuiteIntegration = new Select(netSuiteSelect);
+		netSuiteIntegration.selectByVisibleText("No");
+
 		saveButton.click();
 		
 		return new IndividualAccountPage(driver);

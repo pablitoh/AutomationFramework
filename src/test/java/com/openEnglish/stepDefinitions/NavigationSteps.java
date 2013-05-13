@@ -19,10 +19,6 @@ public class NavigationSteps {
 	@Autowired
 	private SharedDriver webDriver;
 	
-	@Given("Im on Zuora Page")
-	public void go_to_zuorapage() {
-		webDriver.driver.get("https://apisandbox.zuora.com/login.html");	
-	}
 	
 	@Then("^Fill the username and Password with \"([^\"]*)\" and \"([^\"]*)\"$")
 	public void fill_zuora_auth(String username, String password)

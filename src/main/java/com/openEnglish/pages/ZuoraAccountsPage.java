@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ZuoraAccountsPage {
 
@@ -26,7 +28,8 @@ public class ZuoraAccountsPage {
 		findField.sendKeys(firstName + " " + " " + lastName);
 		searchButton.click();
 
-//WAIT
+		(new WebDriverWait(driver, 30))
+		  .until(ExpectedConditions.textToBePresentInElement(By.xpath("//td/a"), firstName));
 		
 		driver.findElement(By.xpath(String.format("//td/a[contains(.,'%s')]", firstName))).click();
 		
