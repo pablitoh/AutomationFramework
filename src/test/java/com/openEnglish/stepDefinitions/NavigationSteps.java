@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.openEnglish.pages.LeadCreationWebFormPage;
 import com.openEnglish.pages.ProductAdvisorQuestionnairePage;
-import com.openEnglish.pages.ZuoraPage;
 import com.openEnglish.utils.Countries;
 import com.openEnglish.utils.SharedDriver;
 
@@ -18,15 +17,7 @@ public class NavigationSteps {
 	
 	@Autowired
 	private SharedDriver webDriver;
-	
-	
-	@Then("^Fill the username and Password with \"([^\"]*)\" and \"([^\"]*)\"$")
-	public void fill_zuora_auth(String username, String password)
-	{
-		ZuoraPage zuorapage = new ZuoraPage(webDriver.driver);
-		zuorapage.loginWithCredentials(username, password);
-	}
-	
+
 	@Given("^Fill the Form with the \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\"$")
 	public void fill_the_form_with_users(String firstName, String lastName, String email, Countries country, String state, String city, String telType, String areaCode, String tel1, String tel2, String media, String age) throws Exception
 	{

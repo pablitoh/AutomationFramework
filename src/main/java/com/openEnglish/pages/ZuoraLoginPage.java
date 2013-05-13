@@ -1,27 +1,36 @@
 package com.openEnglish.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class ZuoraLoginPage {
 
-	protected final WebDriver driver;
-	
+	private WebDriver driver;
+
 	public ZuoraLoginPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(this.driver, this);
-
 	}
-
-	public ZuoraHomePage Login(String userName, String password) {
-		driver.switchTo().frame("newlogin");
+	
+	@FindBy(id="id_username")
+	private WebElement usernameField;
+	@FindBy(id="id_password")
+	private WebElement passwordField;
+	@FindBy(id="newlogin")
+	private WebElement loginIframe;
+	@FindBy(id="login_button")
+	private WebElement loginButton;
+	
+	public ZuoraHomePage loginWithCredentials(String username, String password)
+	{
+		driver.switchTo().frame(loginIframe);
+	    
+		usernameField.sendKeys(username);
+		passwordField.sendKeys(password);
 		
-		driver.findElement(By.id("id_username")).clear();
-	    driver.findElement(By.id("id_username")).sendKeys(userName);
-	    driver.findElement(By.id("id_password")).clear();
-	    driver.findElement(By.id("id_password")).sendKeys(password);
-	    driver.findElement(By.id("login_button")).click();		
+		loginButton.click();
 		
 		return new ZuoraHomePage(driver);
 	}

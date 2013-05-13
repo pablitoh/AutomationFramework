@@ -31,7 +31,7 @@ public class ZuoraSteps {
 		
 		ZuoraLoginPage zLogin = new ZuoraLoginPage(webDriver.driver);
 		
-		zLogin.Login(userName, password);
+		zLogin.loginWithCredentials(userName, password);
 	}
 	
 	@Then("^I go to accounts page")
@@ -42,7 +42,7 @@ public class ZuoraSteps {
 		zHome.GoToAccountsPage();
 	}
 	
-	@Then("^I access the customers account using \"([^\"]*)\" as firstName and \"([^\"]*)\" as lastName$")
+	@Then("^I access the customers account using \"([^\"]*)\" and \"([^\"]*)\"$")
 	public void go_to_customer_account(String firstName, String lastName) {
 		
 		ZuoraAccountsPage zAccounts = new ZuoraAccountsPage(webDriver.driver);
@@ -76,7 +76,7 @@ public class ZuoraSteps {
 	}
 	
 	@Then("^I verify the subscription")
-	public void verify_to_oe_subscription() {
+	public void verify_oe_subscription() {
 		
 		OESubscriptionPage subPage = new OESubscriptionPage(webDriver.driver);
 		
