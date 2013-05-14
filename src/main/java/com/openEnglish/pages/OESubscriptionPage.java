@@ -1,10 +1,14 @@
 package com.openEnglish.pages;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class OESubscriptionPage {
@@ -17,44 +21,50 @@ public class OESubscriptionPage {
 
 	}
 	
+	@FindBy(className="z-table-block")
+	private WebElement tableInfo;
 	
 	public OESubscriptionPage VerifyFirstPayment() {
 		
-		List<WebElement> list = driver.findElements(By.xpath("//div[@class='z-table-block z-basic']/table/tbody/tr"));
-		WebElement td;
-		WebElement th;
 		boolean found = false;
-		int i = 0;
-		
-		while(i < 30 || found == false) {
-			for (WebElement tr : list) {
-				th = tr.findElement(By.xpath("//th/h5"));
-				td = tr.findElement(By.xpath("//td/span"));
-				
-				if(th.getText().contains("OE_First_Payment_Status:") && td.getText().contains("Processed")) {
-					found = true;
+		int MAXRETRY = 10;
+		int i=0;
+		while(!found && i<MAXRETRY)
+		{
+			List<WebElement> list = tableInfo.findElements(By.tagName("tr"));
+			
+			driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+				for (WebElement tr : list) {
+					try
+					{
+						String thText = tr.findElement(By.tagName("th")).getText();
+						String tdText = tr.findElement(By.tagName("td")).getText();
+						
+						
+						if(thText.equals("OE_First_Payment_Status:") && tdText.equals("Processed"))
+						{
+							found = true;
+						}
+					}
+					catch(NoSuchElementException e)
+					{
+						
+					}
+				}
+				if(!found)
+				{
+					i++;
+					driver.navigate().refresh();
 				}
 				
-				i++;
-			}
-			
-			driver.navigate().refresh();
 		}
+		if(!found)
+		{
+			Assert.fail("Status was not set to Proccessed after " + MAXRETRY + " retries");
+		}
+			System.out.println(found);
+			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);	
 				
-//		String verify = driver.findElement(By.xpath("//div[@class='z-table-block z-basic']/table/tbody" +
-//				"/tr/td/span[contains(.,'Processed')]")).getText();
-		
-//		for(int i = 0 ; i < 30 ; i++) {
-//			if(verify.contains("Processed")) {
-//				System.out.println("ANDA");
-//			}
-//			else {
-////				String asd = driver.getCurrentUrl();
-////				driver.get(asd);
-//				System.out.println(verify);
-//				driver.navigate().refresh();
-//			}
-//		}
 		
 		return this;
 	}
