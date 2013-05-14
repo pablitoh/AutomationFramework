@@ -17,6 +17,11 @@ Then Fill the username and Password with "sarasa" and "conde"
 Scenario Outline: Testing new DataTable implementations
 Given The browser Firefox
 
+
+
+@wip
+Scenario Outline: Testing new DataTable implementations
+Given The browser Firefox
 Given Fill the Form with the <First Name>, <Last Name>, <Email>, <Country>, <State>, <City>, <Tel Type>, <Area Code>, <Tel1>, <Tel2>, <Media>, <Age>
 Then I login to Salesforce using "fnc@openenglish.com.oetest0" as username and "finance0" as password
 Then Verify the user <First Name>, <Last Name>, <Email> is present in Salesforce
@@ -27,12 +32,6 @@ Then I complete the radial page
 Then I fill the Quote form
 Then I select the regular product
 Then I submit the contract with <Dni>, <ccType>, <ccNumber>, <ccDate>, <First Name>, <Last Name>, <cvv>
-Then Pause
-
-@wip
-Scenario Outline: Testing new DataTable implementations
-Given The browser Firefox
-
 Given Im on Zuora Page
 Then I login to Zuora using "fnc_test0@openenglish.com" as username and "Finance00" as password
 Then I go to accounts page

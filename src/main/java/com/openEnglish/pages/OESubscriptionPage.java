@@ -62,7 +62,7 @@ public class OESubscriptionPage {
 		{
 			Assert.fail("Status was not set to Proccessed after " + MAXRETRY + " retries");
 		}
-			System.out.println(found);
+
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);	
 				
 		

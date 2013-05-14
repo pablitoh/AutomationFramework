@@ -27,9 +27,6 @@ public class ZuoraAccountsPage {
 		
 		findField.sendKeys(firstName + " " + " " + lastName);
 		searchButton.click();
-
-		(new WebDriverWait(driver, 30))
-		  .until(ExpectedConditions.textToBePresentInElement(By.xpath("//td/a"), firstName));
 		
 		driver.findElement(By.xpath(String.format("//td/a[contains(.,'%s')]", firstName))).click();
 		
