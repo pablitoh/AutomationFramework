@@ -27,17 +27,18 @@ Then I login to Salesforce using "fnc@openenglish.com.oetest0" as username and "
 Then Verify the user <First Name>, <Last Name>, <Email> is present in Salesforce
 Then I convert the Lead to Account
 Then I go to the opportunity
+
 Then I create the Zuora quote
-Then I complete the radial page
-Then I fill the Quote form
 Then I select the regular product
 Then I submit the contract with <Dni>, <ccType>, <ccNumber>, <ccDate>, <First Name>, <Last Name>, <cvv>
 Given Im on Zuora Page
 Then I login to Zuora using "fnc_test0@openenglish.com" as username and "Finance00" as password
 Then I go to accounts page
 Then I access the customers account using <First Name> and <Last Name>
+
 Then I go to edit
 Then I edit the account
+
 Then I go to the subscription
 Then I verify the subscription
 

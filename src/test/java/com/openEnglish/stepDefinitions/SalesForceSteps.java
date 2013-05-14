@@ -38,7 +38,7 @@ public class SalesForceSteps {
 		loginPage.Login(userName, password);
 	}
 	
-	@Then("^Verify the user \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\" is present in Salesforce$")
+	@Then("^I Verify the user \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\" is present in Salesforce$")
 	public void VerifyLeadCreation(String firstName, String lastName, String email) {
 		
 		SFHomePage homePage = new SFHomePage(webDriver.driver);
@@ -66,22 +66,11 @@ public class SalesForceSteps {
 	@Then("^I create the Zuora quote")
 	public void createZuoraQuote() {
 		OpportunityPage zuoraQuote = new OpportunityPage(webDriver.driver);
-		zuoraQuote.GoToZuoraQuotePage();
-	}
-	
-	@Then("^I complete the radial page")
-	public void completeRadialPage() {
-		
-		ZuoraQuoteRadialsPage quoteRadial = new ZuoraQuoteRadialsPage(webDriver.driver);
-		quoteRadial.GoToCreateZuoraQuote();
-	}
-	
-	@Then("^I fill the Quote form")
-	public void fillQuoteForm() {
-		
-		ZuoraQuoteCreationFormPage fillForm = new ZuoraQuoteCreationFormPage(webDriver.driver);
+		ZuoraQuoteRadialsPage quoteRadial = zuoraQuote.GoToZuoraQuotePage();
+		ZuoraQuoteCreationFormPage fillForm = quoteRadial.GoToCreateZuoraQuote();
 		fillForm.CreateQuote();
 	}
+	
 	@Then("^I select the regular product")
 	public void select_product() throws Exception
 	{

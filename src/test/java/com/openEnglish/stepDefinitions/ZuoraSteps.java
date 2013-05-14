@@ -21,14 +21,10 @@ public class ZuoraSteps {
 	@Autowired
 	private SharedDriver webDriver;
 	
-	@Given("Im on Zuora Page")
-	public void go_to_zuorapage() {
-		webDriver.driver.get("https://apisandbox.zuora.com/login.html");	
-	}
 	
 	@Then("^I login to Zuora using \"([^\"]*)\" as username and \"([^\"]*)\" as password$")
 	public void login_to_zuora(String userName, String password) {
-		
+		webDriver.driver.get("https://apisandbox.zuora.com/login.html");
 		ZuoraLoginPage zLogin = new ZuoraLoginPage(webDriver.driver);
 		
 		zLogin.loginWithCredentials(userName, password);
@@ -51,35 +47,22 @@ public class ZuoraSteps {
 		
 	}
 	
-	@Then("^I go to edit")
+	@Then("^I edit the account")
 	public void go_to_edit_account() {
 		
 		IndividualAccountPage iAccount = new IndividualAccountPage(webDriver.driver);
 		
-		iAccount.EditAccount();
-	}
-	
-	@Then("^I edit the account")
-	public void edit_customers_account() {
-		
-		EditIndividualAccountPage editAccount = new EditIndividualAccountPage(webDriver.driver);
-		
+		EditIndividualAccountPage editAccount = iAccount.EditAccount();
 		editAccount.EditWith();
 	}
 	
-	@Then("^I go to the subscription")
+	
+	@Then("^I verify the subscription")
 	public void go_to_oe_subscription() {
 		
 		IndividualAccountPage iAccount = new IndividualAccountPage(webDriver.driver);
 		
-		iAccount.GoToOESubscription();
-	}
-	
-	@Then("^I verify the subscription")
-	public void verify_oe_subscription() {
-		
-		OESubscriptionPage subPage = new OESubscriptionPage(webDriver.driver);
-		
+		OESubscriptionPage subPage = iAccount.GoToOESubscription();
 		subPage.VerifyFirstPayment();
 	}
 	
