@@ -13,7 +13,7 @@ import cucumber.api.java.en.Then;
 
 
 
-public class NavigationSteps {
+public class WebSteps {
 	
 	@Autowired
 	private SharedDriver webDriver;

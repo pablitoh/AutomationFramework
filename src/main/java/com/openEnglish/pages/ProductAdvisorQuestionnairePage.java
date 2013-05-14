@@ -44,19 +44,19 @@ public class ProductAdvisorQuestionnairePage {
 	private WebElement sendInfoButton;
 	
 	public ProductAdvisorQuestionnairePage VerifyScreen() {
-		
-		(new WebDriverWait(driver, 30))
-		  .until(ExpectedConditions.textToBePresentInElement(By.xpath("//div[@class='success_container squestions_container']/" +
-				"h2[text()[contains(.,'Thank you for requesting information')]]"), "Thank you for requesting information"));
-		
-		Assert.isTrue(driver.findElement(By.xpath("//div[@class='success_container squestions_container']/" +
-				"h2[text()[contains(.,'Thank you for requesting information')]]")).isDisplayed());
+			
+		Assert.isTrue(textContainer.getText().equals("Thank you for requesting information"));
 		
 		return this;
 	}
 	
+	@FindBy(xpath="//div[@class='success_container squestions_container']/h2")
+	private WebElement textContainer;
+	
 	public SuccessfulRegistrationPage AnswerWith(String yesOrNo, String cc1, String cc2, String debit, String check,
 			String studies) {
+		
+		Assert.isTrue(textContainer.getText().equals("Thank you for requesting information"));
 		
 		if(yesOrNo.contains("Yes"))
 			yesRadial.click();
