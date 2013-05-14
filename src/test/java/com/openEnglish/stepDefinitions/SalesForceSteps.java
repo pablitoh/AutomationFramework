@@ -48,11 +48,11 @@ public class SalesForceSteps {
 	}
 
 	
-	@Then("^I convert the Lead to Account")
-	public void ConvertLeadToAccount() {
+	@Then("^I convert the Lead to Account with \"([^\"]*)\", \"([^\"]*)\"$")
+	public void ConvertLeadToAccount(String firstName, String lastName) {
 		
 		ConvertLeadToAccountPage convert = new ConvertLeadToAccountPage(webDriver.driver);
-		convert.Convert();
+		convert.Convert(firstName, lastName);
 	}
 	
 	@Then("^I go to the opportunity")

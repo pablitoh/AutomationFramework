@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 
 public class ConvertLeadToAccountPage {
@@ -22,10 +23,14 @@ public class ConvertLeadToAccountPage {
 	private WebElement convertButton;
 	@FindBy(name="save")
 	private WebElement saveButton;
+	@FindBy(id="accid")
+	private WebElement accid;
 	
-	public ClientAccountPage Convert() {
+	public ClientAccountPage Convert(String firstName, String lastName) {
 		
 		convertButton.click();
+		Select accSelect = new Select(accid);
+		  accSelect.selectByVisibleText("Create New Account: " + firstName + " " + lastName);
 		saveButton.click();
 		
 		return new ClientAccountPage(driver);
