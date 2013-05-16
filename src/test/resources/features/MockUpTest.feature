@@ -2,9 +2,9 @@ Feature: Trial Test Feature Zuora
 
 @Firefox
 Scenario: Testing Zuora Login on Firefox
-Given The browser Chrome
+Given The browser HtmlUnitDriver
 Given Im on Zuora Page
-Then Fill the username and Password with "sarasa" and "conde"
+Then I login to Zuora using "fnc_test0@openenglish.com" as username and "Finance00" as password
 
 @IE
 Scenario: Testing Zuora on Internet Explorer

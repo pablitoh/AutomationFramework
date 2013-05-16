@@ -1,7 +1,9 @@
 package com.openEnglish.stepDefinitions;
 
+import org.junit.Assert;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -36,7 +38,8 @@ public class ConfigurationSteps {
 	
 	 @After  
      public void embedScreenshot(Scenario scenario) {  
-         if (scenario.isFailed()) {  
+		 
+         if (scenario.isFailed() && !webDriver.driver.getClass().toString().equals("class org.openqa.selenium.htmlunit.HtmlUnitDriver")) {  
              try {  
                  byte[] screenshot = ((TakesScreenshot) webDriver.driver).getScreenshotAs(OutputType.BYTES);  
                  scenario.embed(screenshot, "image/png");  

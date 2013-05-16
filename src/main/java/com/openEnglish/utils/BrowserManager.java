@@ -9,6 +9,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+import com.gargoylesoftware.htmlunit.BrowserVersion;
+
 public class BrowserManager {
 	
     public WebDriver chooseBrowser(Browsers browser) throws Exception {
@@ -26,7 +28,11 @@ public class BrowserManager {
 	    	default:				{ throw new Exception();	}
 		}
     	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-    	//driver.manage().window().maximize();
+    	if(!driver.getClass().toString().equals("class org.openqa.selenium.htmlunit.HtmlUnitDriver"))
+    	{
+    		driver.manage().window().maximize();
+    	}
+    	
     	return driver;
     	
     }
