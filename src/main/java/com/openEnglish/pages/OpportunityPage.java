@@ -6,6 +6,7 @@ import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.springframework.util.Assert;
 
 public class OpportunityPage {
 	
@@ -18,8 +19,12 @@ public class OpportunityPage {
 	
 	@FindBy(xpath="//*[@id='bottomButtonRow']/input[7]")
 	private WebElement newZuoraQuoteButton;
+	@FindBy(xpath="//img[@title='Opportunity']")
+	private WebElement oppVerification;
 	
 	public ZuoraQuoteRadialsPage GoToZuoraQuotePage() {
+		
+		Assert.isTrue(oppVerification.isDisplayed());
 		
 		newZuoraQuoteButton.click();
 	
